@@ -1,0 +1,1431 @@
+input,
+span,
+textarea,
+label,
+a,
+span {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+label {
+  display: block;
+}
+
+@media screen and (max-width: 1366px) {
+  label {
+    padding-top: 15px;
+  }
+}
+
+label + span {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #7bb928;
+  padding: 8px 10px 0 0;
+  position: absolute;
+}
+
+input {
+  border: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #0f1f2b;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  input.input-width {
+    width: 450px;
+  }
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #7bb928;
+}
+
+input[type="file"] {
+  font-size: 0;
+  background: none;
+  padding: 0;
+}
+
+input[type="file"]:focus, input[type="file"]:visited {
+  font-size: 16px;
+  margin-left: -60px;
+}
+
+textarea {
+  height: 252px;
+  width: 100%;
+  padding: 15px;
+  resize: none;
+}
+
+@media screen and (min-width: 1680px) {
+  textarea {
+    width: 830px;
+  }
+}
+
+textarea:focus {
+  outline: none;
+  border: 1.5px solid #7bb928;
+}
+
+@font-face {
+  font-family: "Mardoto-Regular";
+  src: url("../fonts/Mardoto-Regular.eot");
+  src: url("../fonts/Mardoto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Regular.svg#Mardoto-Regular") format("svg"), url("../fonts/Mardoto-Regular.ttf") format("truetype"), url("../fonts/Mardoto-Regular.woff") format("woff"), url("../fonts/Mardoto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto-Medium";
+  src: url("../fonts/Mardoto-Medium.eot");
+  src: url("../fonts/Mardoto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Medium.svg#Mardoto-Medium") format("svg"), url("../fonts/Mardoto-Medium.ttf") format("truetype"), url("../fonts/Mardoto-Medium.woff") format("woff"), url("../fonts/Mardoto-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto-Light";
+  src: url("../fonts/Mardoto-Light.eot");
+  src: url("../fonts/Mardoto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Light.svg#Mardoto-Medium") format("svg"), url("../fonts/Mardoto-Light.ttf") format("truetype"), url("../fonts/Mardoto-Light.woff") format("woff"), url("../fonts/Mardoto-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  position: relative;
+  height: 100%;
+  background-color: #fffefe;
+  color: #0f1f2b;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+section,
+main,
+header,
+footer,
+figure,
+figcaption,
+input,
+textarea,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-weight: normal;
+}
+
+* a {
+  text-decoration: none;
+  color: #0f1f2b;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  padding: 9px 17px;
+  border: 1px solid #7bb928;
+  font-size: 16px;
+  background-color: transparent;
+  color: #7bb928;
+  cursor: pointer;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 20px;
+    padding: 11px 24px;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  color: #ffffff;
+  background-color: #7bb928;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.btn:hover::before {
+  height: 200%;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.btn:disabled {
+  background-color: #a7a7a7;
+}
+
+.btn-white {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.btn-white::before {
+  content: "";
+  color: #7bb928;
+  background-color: #ffffff;
+}
+
+.btn-white:hover {
+  color: #7bb928;
+}
+
+h1 {
+  font-family: "Mardoto-Medium", sans-serif;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+.info {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .info {
+    width: calc(100% - 330px);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .info {
+    width: calc(100% - 475px);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .info {
+    width: calc(100% - 520px);
+  }
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidden-menu {
+  display: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*start margin styles*/
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1366px) {
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  .mb-65 {
+    margin-bottom: 65px;
+  }
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .mt-45 {
+    margin-top: 45px;
+  }
+  .mt-150 {
+    margin-top: 150px;
+  }
+  .mb-50 {
+    margin-bottom: 55px;
+  }
+  .mb-55 {
+    margin-bottom: 55px;
+  }
+}
+
+/*end margin styles*/
+.divider {
+  display: block;
+  border-top: 0.5px solid #0f1f2b;
+  width: 100%;
+}
+
+.menu {
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
+  position: relative;
+}
+
+.menu::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #7bb928;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu:hover {
+  border-color: #7bb928;
+}
+
+.menu:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+main {
+  padding-top: 100px;
+  min-height: 600px;
+}
+
+@media screen and (max-width: 1365px) {
+  main {
+    padding-top: 70px;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background: url("../images/arrow-down.svg") no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1365px) {
+  .caret {
+    background: url("../images/caret-mobile.svg") no-repeat center;
+  }
+}
+
+/*start header styles*/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fffefe;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  z-index: 100;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  /*mobile-menu styles*/
+  /*end mobile-menu styles*/
+}
+
+@media screen and (min-width: 1366px) {
+  header {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 96px;
+  }
+}
+
+header .logo {
+  display: block;
+  width: 89px;
+  height: 53px;
+  background: url("../images/logo.svg") no-repeat center;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1366px) {
+  header .logo {
+    width: 118px;
+    height: 70px;
+  }
+}
+
+header .navbar-search {
+  position: relative;
+}
+
+@media screen and (max-width: 1365px) {
+  header .navbar-search {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  header .navbar-search {
+    margin: 0 5px;
+  }
+}
+
+header .navbar-search div {
+  position: relative;
+}
+
+header .navbar-search input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 0.5px solid #0f1f2b;
+  font-size: 20px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 1679px) {
+  header .navbar-search input {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  header .navbar-search input {
+    border-radius: 4px;
+    background-color: #F9F9F9;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #626F6E;
+    padding: 11px 10px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  header .navbar-search input {
+    padding: 10px;
+  }
+}
+
+header .navbar-search input::-webkit-input-placeholder {
+  color: #b5b9bd;
+  font-size: 20px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 1679px) {
+  header .navbar-search input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #626F6E;
+  }
+}
+
+header .navbar-search input::-moz-placeholder {
+  color: #b5b9bd;
+  font-size: 20px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 1679px) {
+  header .navbar-search input::-moz-placeholder {
+    font-size: 16px;
+    color: #626F6E;
+  }
+}
+
+header .navbar-search input:-moz-placeholder {
+  color: #b5b9bd;
+  font-size: 20px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 1679px) {
+  header .navbar-search input:-moz-placeholder {
+    font-size: 16px;
+    color: #626F6E;
+  }
+}
+
+header .navbar-search input:focus {
+  outline: 0;
+}
+
+header .navbar-search button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../images/search-icon.svg") no-repeat center #fffefe;
+  z-index: 1;
+  padding-left: 3px;
+}
+
+@media screen and (max-width: 1365px) {
+  header .navbar-search button {
+    background-color: #F9F9F9;
+  }
+}
+
+header .navbar-search button:focus {
+  outline: 0;
+}
+
+header nav {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  height: 96px;
+}
+
+@media screen and (min-width: 1366px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(100% - 115px);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  header nav {
+    width: calc(100% - 150px);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  header nav {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  header nav {
+    padding: 0 30px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+header nav div {
+  position: relative;
+}
+
+header nav div.navbar-left, header nav div.navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 8px;
+  white-space: nowrap;
+  font-family: "Mardoto-Medium", sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav a {
+    font-size: 14px;
+    padding: 5px 6px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  header nav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  header nav a {
+    font-size: 20px;
+    padding: 5px 15px;
+  }
+}
+
+header nav a:hover .caret, header nav a:focus .caret {
+  background: url("../images/arrow-up.svg") no-repeat center;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1366px) {
+  header nav a.show-menu:hover ~ .hidden-menu, header nav a.show-menu:focus ~ .hidden-menu {
+    display: block;
+    position: absolute;
+    max-width: 1045px;
+    background-color: #fffefe;
+    box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    color: #0f1f2b;
+    padding: 20px;
+    top: 80px;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu.languages, header nav a.show-menu:focus ~ .hidden-menu.languages {
+    top: 35px;
+    right: 0;
+    padding: 15px 20px;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu.languages a, header nav a.show-menu:focus ~ .hidden-menu.languages a {
+    margin: 5px 0;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu strong, header nav a.show-menu:focus ~ .hidden-menu strong {
+    display: block;
+    font-size: 20px;
+    color: #0f1f2b;
+    font-weight: normal;
+    font-family: "Mardoto-Medium", sans-serif;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu strong + span, header nav a.show-menu:focus ~ .hidden-menu strong + span {
+    display: inline-block;
+    width: 50px;
+    border-bottom: 1px solid #7bb928;
+    padding: 2px 0;
+    margin-bottom: 10px;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu .menu-level-1,
+  header nav a.show-menu:hover ~ .hidden-menu .menu-level-2,
+  header nav a.show-menu:hover ~ .hidden-menu .menu-level-3,
+  header nav a.show-menu:hover ~ .hidden-menu .menu-level-4,
+  header nav a.show-menu:hover ~ .hidden-menu .menu-level-5, header nav a.show-menu:focus ~ .hidden-menu .menu-level-1,
+  header nav a.show-menu:focus ~ .hidden-menu .menu-level-2,
+  header nav a.show-menu:focus ~ .hidden-menu .menu-level-3,
+  header nav a.show-menu:focus ~ .hidden-menu .menu-level-4,
+  header nav a.show-menu:focus ~ .hidden-menu .menu-level-5 {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    padding-left: 10px;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu a, header nav a.show-menu:focus ~ .hidden-menu a {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 2px;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu a:hover, header nav a.show-menu:focus ~ .hidden-menu a:hover {
+    padding-left: 8px;
+    color: #7bb928;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu ul li, header nav a.show-menu:focus ~ .hidden-menu ul li {
+    list-style-type: none;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu ul li:hover > ul, header nav a.show-menu:focus ~ .hidden-menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu .flex-row, header nav a.show-menu:focus ~ .hidden-menu .flex-row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu .menu-items, header nav a.show-menu:focus ~ .hidden-menu .menu-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header nav a.show-menu:hover ~ .hidden-menu .menu-items div, header nav a.show-menu:focus ~ .hidden-menu .menu-items div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 165px;
+        flex-basis: 165px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header #mobile-menu {
+  display: none;
+  width: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+
+header #mobile-menu .line {
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+header #mobile-menu .line + ul {
+  padding-left: 15px;
+}
+
+header #mobile-menu div.languages-mobile {
+  padding: 15px 15px 20px;
+}
+
+header #mobile-menu div.languages-mobile i,
+header #mobile-menu div.languages-mobile a {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+header #mobile-menu div.languages-mobile i:hover, header #mobile-menu div.languages-mobile i:focus,
+header #mobile-menu div.languages-mobile a:hover,
+header #mobile-menu div.languages-mobile a:focus {
+  color: #7bb928;
+}
+
+header #mobile-menu div.languages-mobile i {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background: url("../images/languages.svg") no-repeat center;
+  background-size: 100%;
+}
+
+header #mobile-menu a {
+  position: relative;
+  padding: 5px 0;
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Mardoto-Medium", sans-serif;
+}
+
+header #mobile-menu .main-menu ul {
+  list-style-type: none;
+}
+
+header #mobile-menu .main-menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 17px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #mobile-menu .main-menu ul li a:hover, header #mobile-menu .main-menu ul li a:focus {
+  color: #7bb928;
+}
+
+header #mobile-menu .main-menu ul li a:hover .caret, header #mobile-menu .main-menu ul li a:focus .caret {
+  background: url("../images/green-caret.svg") no-repeat center;
+}
+
+header #mobile-menu .main-menu ul li a span {
+  padding-left: 15px;
+}
+
+header #mobile-menu .main-menu ul li a i {
+  margin-right: 5px;
+}
+
+header #mobile-menu .main-menu ul li a + ul {
+  padding-left: 10px;
+}
+
+header .close-icon,
+header .menu-icon {
+  border: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+header .close-icon:focus,
+header .menu-icon:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 1365px) {
+  header .close-icon,
+  header .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  header .close-icon,
+  header .menu-icon {
+    display: none;
+  }
+}
+
+header .close-icon {
+  background: url("../images/close.svg") no-repeat center center;
+}
+
+header .menu-icon {
+  background: url("../images/menu-icon.svg") no-repeat center center;
+}
+
+/*end header styles*/
+/*start footer styles*/
+footer {
+  padding: 38px 5px 0;
+  background: url("../images/footer-bg.svg") no-repeat top center #F6FAEF;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    background-size: contain;
+    padding: 50px 10px 0;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 40px 10px 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer {
+    padding: 150px 10px 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer {
+    background-size: cover;
+  }
+}
+
+footer .flex-row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .flex-row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1366px) {
+  footer .flex-row div:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+footer h2,
+footer span {
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 5px 0;
+  font-family: "Mardoto-Medium", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  footer h2,
+  footer span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  footer h2,
+  footer span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+footer h2 + p,
+footer span + p {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  footer h2 + p,
+  footer span + p {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer h2 + p,
+  footer span + p {
+    margin-top: 25px;
+  }
+}
+
+footer a {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Mardoto-Medium", sans-serif;
+  padding: 5px 0;
+}
+
+footer a[href^="mailto:"]:hover, footer a[href^="callto:"]:hover {
+  color: #7bb928;
+}
+
+@media screen and (max-width: 767px) {
+  footer a[href^="mailto:"] {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer a[href^="callto:"] {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  footer a {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 0 5px;
+  }
+}
+
+footer .footer-logo {
+  display: block;
+  width: 107px;
+  height: 64px;
+  margin: 0 auto 5px;
+  background: url("../images/footer-logo.svg") no-repeat center;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-logo {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer .footer-logo {
+    width: 230px;
+    height: 136px;
+  }
+}
+
+footer small {
+  display: block;
+  font-size: 10px;
+  font-family: "Mardoto-Regular", sans-serif;
+  padding: 40px 0 30px;
+}
+
+@media screen and (min-width: 768px) {
+  footer small {
+    font-size: 14px;
+    padding: 50px 0 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer small {
+    padding: 70px 0 50px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  footer small {
+    padding: 195px 0 60px;
+  }
+}
+
+/*end footer styles*/
+/* start social styles*/
+.social {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media screen and (min-width: 1024px) {
+  .social {
+    margin-right: 15px;
+  }
+}
+
+.social:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.facebook {
+  background: url("../images/facebook.svg") no-repeat center;
+}
+
+.instagram {
+  background: url("../images/instagram.svg") no-repeat center;
+}
+
+.twitter {
+  background: url("../images/twitter.svg") no-repeat center;
+}
+
+/* end social styles*/
+.heading {
+  display: block;
+  font-size: 20px;
+  font-family: "Mardoto-Medium", sans-serif;
+  padding: 5px 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 26px;
+    padding: 5px 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: 28px;
+    padding: 10px 0 15px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .heading {
+    font-size: 30px;
+    padding: 15px 0 30px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .heading {
+    font-size: 32px;
+    padding: 20px 0 30px;
+  }
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 15;
+}
+
+@media screen and (min-width: 768px) {
+  .fixed-icons {
+    bottom: 56px;
+    right: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fixed-icons {
+    bottom: 70px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .fixed-icons {
+    bottom: 100px;
+  }
+}
+
+.fixed-icons a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .fixed-icons a {
+    width: 56px;
+    height: 56px;
+    margin-left: 15px;
+  }
+}
+
+.fixed-icons a.jump-top {
+  background: url("../images/jump-top.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.fixed-icons a.jump-top:hover {
+  background: url("../images/jump-top-hover.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.fixed-icons a.contact {
+  background: url("../images/contact.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.fixed-icons a.contact:hover {
+  background: url("../images/contact-hover.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.fixed-icons a.call {
+  background: url("../images/call-icon.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.fixed-icons a.call:hover {
+  background: url("../images/call-icon-hover.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.text-green {
+  color: #7bb928;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+#popUpOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 101;
+}
+
+.popUpBox {
+  position: relative;
+  background-color: white;
+  width: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  .popUpBox {
+    width: 100%;
+  }
+}
+
+.popUpBox h2 {
+  background-color: #7bb928;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.popUpBox .btn {
+  z-index: 1;
+}
+
+.popUpBox form {
+  padding: 60px 40px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .popUpBox form {
+    padding: 30px 20px 20px;
+  }
+}
+
+.popUpBox form .form-bottom {
+  border-bottom: 1px solid #0f1f2b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .popUpBox form .form-bottom {
+    margin-bottom: 30px;
+  }
+}
+
+.popUpBox form .form-bottom input {
+  border: 0;
+  width: calc(100% - 110px);
+}
+
+.popUpBox form .form-bottom .dropdown-languages {
+  position: relative;
+  border-right: 1px solid #707070;
+  margin-right: 15px;
+  padding: 5px 0 0 5px;
+}
+
+.popUpBox form .form-bottom .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 40px;
+  padding: 10px;
+  background-color: #fffefe;
+  box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.popUpBox form .form-bottom .dropdown-languages:hover .dropdown-content {
+  display: block;
+}
+
+.popUpBox form .form-bottom button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+  border: 0;
+}
+
+.popUpBox form .form-bottom button:focus {
+  outline: 0;
+}
+
+.popUpBox form .form-bottom i {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.popUpBox form .form-bottom i.flag {
+  width: 30px;
+  height: 18px;
+  background: url("../images/flag.jpg") no-repeat center;
+}
+
+.popUpBox form .form-bottom i.arrow-down {
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #0f1f2b;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#popUpOverlay:not(:target) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more {
+  display: inline-block;
+}
+
+.more .more-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 20px;
+  background: url("../images/more.svg") no-repeat center;
+  background-size: 100%;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.more:hover .more-icon {
+  -webkit-transform: translateX(10px) scale(1.2);
+          transform: translateX(10px) scale(1.2);
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .social-links {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

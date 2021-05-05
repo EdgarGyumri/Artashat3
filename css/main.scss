@@ -1,0 +1,1068 @@
+@import "variables";
+@import "form";
+@font-face {
+  font-family: "Mardoto-Regular";
+  src: url("../fonts/Mardoto-Regular.eot");
+  src: url("../fonts/Mardoto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Regular.svg#Mardoto-Regular") format("svg"), url("../fonts/Mardoto-Regular.ttf") format("truetype"), url("../fonts/Mardoto-Regular.woff") format("woff"), url("../fonts/Mardoto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto-Medium";
+  src: url("../fonts/Mardoto-Medium.eot");
+  src: url("../fonts/Mardoto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Medium.svg#Mardoto-Medium") format("svg"), url("../fonts/Mardoto-Medium.ttf") format("truetype"), url("../fonts/Mardoto-Medium.woff") format("woff"), url("../fonts/Mardoto-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mardoto-Light";
+  src: url("../fonts/Mardoto-Light.eot");
+  src: url("../fonts/Mardoto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Mardoto-Light.svg#Mardoto-Medium") format("svg"), url("../fonts/Mardoto-Light.ttf") format("truetype"), url("../fonts/Mardoto-Light.woff") format("woff"), url("../fonts/Mardoto-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  position: relative;
+  height: 100%;
+  background-color: $background;
+  color: $primary-color;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+section,
+main,
+header,
+footer,
+figure,
+figcaption,
+input,
+textarea,
+label {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-weight: normal;
+}
+
+* a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  padding: 9px 17px;
+  border: 1px solid $green;
+  font-size: 16px;
+  background-color: transparent;
+  color: $green;
+  cursor: pointer;
+  font-family: "Mardoto-Regular", sans-serif;
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 11px 24px;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    color: $white;
+    background-color: $green;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  
+  &:hover::before {
+    height: 200%;
+  }
+  &:hover {
+    color: $white;
+  }
+  &:disabled {
+    background-color: $grey-border;
+  }
+}
+
+.btn-white {
+  border: 1px solid $white;
+  color: $white;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    color: $green;
+    background-color: $white;
+  }
+
+  &:hover {
+    color: $green;
+  }
+}
+
+h1 {
+  font-family: "Mardoto-Medium", sans-serif;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1790px;
+  margin: 0 auto;
+  padding: 0 10px;
+  @media screen and (max-width: $mobile-width) {
+    padding: 0 10px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 15px;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    padding: 0 20px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    padding: 0 30px;
+  }
+}
+
+.info {
+  // width: calc(100% - 420px);
+  padding-bottom: 20px;
+  @media screen and (min-width: $desktop-width) {
+    width: calc(100% - 330px);
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    width: calc(100% - 475px);
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    width: calc(100% - 520px);
+  }
+}
+
+.flex-row {
+  display: flex;
+}
+
+.hidden-menu {
+  display: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/*start margin styles*/
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: $desktop-large-width) {
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+  .mb-65 {
+    margin-bottom: 65px;
+  }
+  .mt-50 {
+    margin-top: 50px;
+  }
+  .mt-45 {
+    margin-top: 45px;
+  }
+  .mt-150 {
+    margin-top: 150px;
+  }
+  .mb-50 {
+    margin-bottom: 55px;
+  }
+  .mb-55 {
+    margin-bottom: 55px;
+  }
+}
+
+
+/*end margin styles*/
+
+.divider {
+  display: block;
+  border-top: 0.5px solid $primary-color;
+  width: 100%;
+}
+
+.menu {
+//   border-bottom: 4px solid transparent;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $green;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    border-color: $green;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+main {
+  padding-top: 100px;
+  min-height: 600px;
+  @media screen and (max-width: ($desktop-large-width - 1px)) {
+    padding-top: 70px;
+  }
+}
+
+.caret {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background: url("../images/arrow-down.svg") no-repeat center;
+  background-size: 100%;
+  cursor: pointer;
+  @media screen and (max-width: ($desktop-large-width - 1px)) {
+    background: url("../images/caret-mobile.svg") no-repeat center;
+  }
+}
+
+
+/*start header styles*/
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $background;
+  @include box-shadow(0px,3px,6px,rgba(0,0,0,0.16));
+  z-index: 100;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  @media screen and (min-width: $desktop-large-width) {
+    justify-content: space-evenly;
+    height: 96px;
+  }
+  .logo {
+    display: block;
+    width: 89px;
+    height: 53px;
+    background: url('../images/logo.svg') no-repeat center;
+    background-size: 100%;
+    @media screen and (min-width: $desktop-large-width) {
+      width: 118px;
+      height: 70px;
+    }
+  }
+  .navbar-search {
+    position: relative;
+    @media screen and (max-width: ($desktop-large-width - 1px)) {
+      padding: 0 15px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      margin: 0 5px;
+    }
+    div {
+      position: relative;
+    }
+    input {
+      padding: 5px 10px;
+      @include rounded(20px);
+      background-color: $white;
+      border: 0.5px solid $primary-color;
+      font-size: 20px;
+      font-family: "Mardoto-Regular", sans-serif;
+      @media screen and (max-width: ($desktop-xl-width - 1px)) {
+        font-size: 16px;
+        // max-width: 220px;
+      }
+      @media screen and (max-width: ($desktop-large-width - 1px)) {
+        @include rounded(4px);
+        background-color: $gray-bg;
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        font-size: 14px;
+        line-height: 19px;
+        color: $dark-grey;
+        padding: 11px 10px;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        padding: 10px;
+      }
+      &::-webkit-input-placeholder {
+        color: $light-grey;
+        font-size: 20px;
+        font-family: "Mardoto-Regular", sans-serif;
+        @media screen and (max-width: ($desktop-xl-width - 1px)) {
+          font-size: 16px;
+          color: $dark-grey;
+        }
+      }
+      &::-moz-placeholder {
+        color: $light-grey;
+        font-size: 20px;
+        font-family: "Mardoto-Regular", sans-serif;
+        @media screen and (max-width: ($desktop-xl-width - 1px)) {
+          font-size: 16px;
+          color: $dark-grey;
+        }
+      }
+      &:-moz-placeholder {
+        color: $light-grey;
+        font-size: 20px;
+        font-family: "Mardoto-Regular", sans-serif;
+        @media screen and (max-width: ($desktop-xl-width - 1px)) {
+          font-size: 16px;
+          color: $dark-grey;
+        }
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+    button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      width: 24px;
+      height: 24px;
+      border: 0;
+      transform: translateY(-50%);
+      background: url("../images/search-icon.svg") no-repeat center #fffefe;
+      z-index: 1;
+      padding-left: 3px;
+      @media screen and (max-width: ($desktop-large-width - 1px)) {
+        background-color: $gray-bg;
+      }
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+  nav {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 96px;
+    @media screen and (min-width: $desktop-large-width) {
+      display: flex;
+      width: calc(100% - 115px);
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      width: calc(100% - 150px);
+    }
+    @media screen and (max-width: $mobile-width) {
+      padding: 0 10px;
+    }
+    // @media screen and (min-width: $desktop-width) {
+    //   padding: 0 10px;
+    // }
+    // @media screen and (min-width: $desktop-large-width) {
+    //   padding: 0 10px;
+    // }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding: 0 30px;
+      justify-content: space-evenly;
+    }
+    div {
+      position: relative;
+      &.navbar-left,
+      &.navbar-right {
+        display: flex;
+        align-items: center;
+      }
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      padding: 5px 8px;
+      white-space: nowrap;
+      font-family: "Mardoto-Medium", sans-serif;
+      @media screen and (min-width: $desktop-width) {
+        font-size: 14px;
+        padding: 5px 6px;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        font-size: 16px;
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        font-size: 20px;
+        padding: 5px 15px;
+      }
+      &:hover,
+      &:focus {
+        .caret {
+          background: url("../images/arrow-up.svg") no-repeat center;
+          background-size: 100%;
+        }
+      }
+      &.show-menu:hover,
+      &.show-menu:focus {
+        ~.hidden-menu {
+          @media screen and (min-width: $desktop-large-width) {
+            display: block;
+            position: absolute;
+            max-width: 1045px;
+            background-color: $background;
+            @include box-shadow(3px,8px,25px,rgba(0, 0, 0, 0.16));
+            @include rounded(10px);
+            color: $primary-color;
+            padding: 20px;
+            // right: 0;
+            top: 80px;
+            &.languages {
+              top: 35px;
+              right: 0;
+              padding: 15px 20px;
+              a {
+                margin: 5px 0;
+              }
+            }
+            strong {
+              display: block;
+              font-size: 20px;
+              color: $primary-color;
+              font-weight: normal;
+              font-family: "Mardoto-Medium", sans-serif;
+              &+span {
+                display: inline-block;
+                width: 50px;
+                border-bottom: 1px solid $green;
+                padding: 2px 0;
+                margin-bottom: 10px;
+              }
+            }
+            .menu-level-1,
+            .menu-level-2,
+            .menu-level-3,
+            .menu-level-4,
+            .menu-level-5 {
+              opacity: 0;
+              visibility: hidden;
+              display: none;
+              padding-left: 10px;
+            }
+            a {
+              font-size: 16px;
+              line-height: 21px;
+              padding: 2px;
+              &:hover {
+                padding-left: 8px;
+                color: $green;
+              }
+            }
+            ul li {
+              list-style-type: none;
+              transition-duration: 0.5s;
+              &:hover {
+                &>ul {
+                  opacity: 1;
+                  visibility: visible;
+                  display: block;
+                }
+              }
+            }
+            .flex-row {
+              justify-content: space-between;
+            }
+            .menu-items {
+              display: flex;
+              flex-wrap: wrap;
+              div {
+                display: flex;
+                flex-basis: 165px;
+                flex-direction: column;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*mobile-menu styles*/
+  #mobile-menu {
+    display: none;
+    width: 100%;
+    background: $white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    .line {
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      @include box-shadow(0,1px,0,rgba(0,0,0,0.16));
+      &+ul {
+        padding-left: 15px;
+      }
+    }
+    div {
+      &.languages-mobile {
+        padding: 15px 15px 20px;
+        i,
+        a {
+          display: inline-block;
+          margin-right: 25px;
+          font-size: 14px;
+          line-height: 24px;
+          &:hover,
+          &:focus {
+            color: $green;
+          }
+        }
+        i {
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+          background: url('../images/languages.svg') no-repeat center;
+          background-size: 100%;
+        }
+      }
+    }
+    a {
+      position: relative;
+      padding: 5px 0;
+      display: block;
+      font-size: 14px;
+      line-height: 24px;
+      font-family: "Mardoto-Medium", sans-serif;
+    }
+    .main-menu {
+      ul {
+        list-style-type: none;
+        li {
+          a {
+            display: flex;
+            width: 100%;
+            padding: 17px 15px;
+            justify-content: space-between;
+            align-items: center;
+            &:hover,
+            &:focus {
+              color: $green;
+              .caret {
+                background: url("../images/green-caret.svg") no-repeat center;
+              }
+            }
+            span {
+              padding-left: 15px;
+            }
+            i {
+              margin-right: 5px;
+            }
+            &+ul {
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .close-icon,
+  .menu-icon {
+    border: 0;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    &:focus {
+      outline: 0;
+    }
+    @media screen and (max-width: ($desktop-large-width - 1px)) {
+      display: block;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      display: none;
+    }
+  }
+  .close-icon {
+    background: url('../images/close.svg') no-repeat center center;
+  }
+  .menu-icon {
+    background: url('../images/menu-icon.svg') no-repeat center center;
+  }
+  /*end mobile-menu styles*/
+}
+
+
+/*end header styles*/
+
+
+/*start footer styles*/
+
+footer {
+  padding: 38px 5px 0;
+  background: url("../images/footer-bg.svg") no-repeat top center $grey-bg;
+  background-size: 100%;
+  @media screen and (min-width: $tablet-width) {
+    background-size: contain;
+    padding: 50px 10px 0;
+    background-color: transparent;
+  }
+  @media screen and (min-width: $tablet-width) {
+    padding: 40px 10px 0;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    padding: 150px 10px 0;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    background-size: cover;
+  }
+  .flex-row {
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      &:first-child {
+        @media screen and (max-width: $desktop-large-width) {
+          flex-basis: 100%;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    @media screen and (min-width: $tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  h2,
+  span {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 0;
+    font-family: "Mardoto-Medium", sans-serif;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &+p {
+      margin-top: 10px;
+      @media screen and (min-width: $desktop-width) {
+        margin-top: 15px;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        margin-top: 25px;
+      }
+    }
+  }
+  a {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mardoto-Medium", sans-serif;
+    padding: 5px 0;
+    &[href^="mailto:"],
+    &[href^="callto:"] {
+      &:hover {
+        color: $green;
+      }
+    }
+    &[href^="mailto:"] {
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        margin-top: 15px;
+      }
+    }
+    &[href^="callto:"] {
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        margin-bottom: 15px;
+      }
+    }
+    @media screen and (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      font-size: 20px;
+      line-height: 24px;
+      padding: 10px 0 5px;
+    }
+  }
+  .footer-logo {
+    display: block;
+    width: 107px;
+    height: 64px;
+    margin: 0 auto 5px;
+    background: url('../images/footer-logo.svg') no-repeat center;
+    background-size: 100%;
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      width: 230px;
+      height: 136px;
+    }
+  }
+  small {
+    display: block;
+    font-size: 10px;
+    font-family: "Mardoto-Regular", sans-serif;
+    padding: 40px 0 30px;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 14px;
+      padding: 50px 0 40px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      padding: 70px 0 50px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      padding: 195px 0 60px;
+    }
+  }
+}
+/*end footer styles*/
+
+
+/* start social styles*/
+.social {
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+  padding: 0;
+  transition: 0.3s;
+  transform: translateY(0);
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 15px;
+  }
+  &:hover {
+    transform: translateY(-10px);
+  }
+}
+
+.facebook {
+  background: url("../images/facebook.svg") no-repeat center;
+}
+
+.instagram {
+  background: url("../images/instagram.svg") no-repeat center;
+}
+
+.twitter {
+  background: url("../images/twitter.svg") no-repeat center;
+}
+
+
+/* end social styles*/
+
+.heading {
+  display: block;
+  font-size: 20px;
+  font-family: "Mardoto-Medium", sans-serif;
+  padding: 5px 0 10px;
+  @media screen and (min-width: $tablet-width) {
+    font-size: 26px;
+    padding: 5px 0 10px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    font-size: 28px;
+    padding: 10px 0 15px;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    font-size: 30px;
+    padding: 15px 0 30px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    font-size: 32px;
+    padding: 20px 0 30px;
+  }
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 15;
+  @media screen and (min-width: $tablet-width) {
+    bottom: 56px;
+    right: 60px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    bottom: 70px;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    bottom: 100px;
+  }
+  a {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    margin-left: 10px;
+    @media screen and (min-width: $desktop-width) {
+      width: 56px;
+      height: 56px;
+      margin-left: 15px;
+    }
+    &.jump-top {
+      background: url("../images/jump-top.svg") no-repeat center;
+      background-size: 100%;
+      &:hover {
+        background: url("../images/jump-top-hover.svg") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    &.contact {
+      background: url("../images/contact.svg") no-repeat center;
+      background-size: 100%;
+      &:hover {
+        background: url("../images/contact-hover.svg") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    &.call {
+      background: url("../images/call-icon.svg") no-repeat center;
+      background-size: 100%;
+      &:hover {
+        background: url("../images/call-icon-hover.svg") no-repeat center;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.text-green {
+  color: $green;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+h2 {
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+#popUpOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.popUpBox {
+  position: relative;
+  background-color: white;
+  width: 600px;
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    width: 100%;
+  }
+
+  h2 {
+    background-color: $green;
+    color: $white;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  .btn{
+    z-index: 1;
+  }
+
+  form {
+   padding: 60px 40px 30px;
+   @media screen and (max-width: ($tablet-width - 1px)) {
+    padding: 30px 20px 20px;
+   }
+
+   .form-bottom {
+      border-bottom: 1px solid $primary-color;
+      display: flex;
+      margin-bottom: 60px;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        margin-bottom: 30px;
+      }
+
+      input {
+        border: 0;
+        width: calc(100% - 110px);
+      }
+      .dropdown-languages {
+        position: relative;
+        border-right: 1px solid $gray;
+        margin-right: 15px;
+        padding: 5px 0 0 5px; 
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          min-width: 40px;
+          padding: 10px;
+          background-color: $background;
+          @include box-shadow(3px,8px,25px,rgba(0, 0, 0, 0.16));
+          @include rounded(10px);
+          z-index: 1;
+        }
+
+      .dropdown-languages:hover .dropdown-content {
+        display: block;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: transparent;
+        padding: 5px;
+        border: 0;
+       
+        &:focus{
+          outline: 0 ;
+        }
+      }
+
+      i{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      
+        &.flag{
+          width: 30px;
+          height: 18px;
+          background: url('../images/flag.jpg') no-repeat center;
+        }
+  
+        &.arrow-down{
+          width: 0px;
+          height: 0px;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid $primary-color;
+        }
+      }
+    }
+  } 
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: $white;
+  font-size: 30px;
+}
+
+#popUpOverlay:not(:target) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.more {
+  display: inline-block;
+  
+  .more-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 27px;
+    height: 20px;
+    background: url('../images/more.svg') no-repeat center;
+    background-size: 100%;
+    transition: transform .5s ease;
+  }
+
+  &:hover {
+    .more-icon {
+      transform: translateX(10px) scale(1.2);
+    }
+  }
+}
+
+.social-links {
+  @media screen and (max-width: $desktop-width) and (min-width: $tablet-width) {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 20px auto 0;
+  }
+}

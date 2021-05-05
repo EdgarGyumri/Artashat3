@@ -1,0 +1,43 @@
+@import "variables";
+.breadcrumb-menu {
+  padding: 15px 0 5px;
+  @media screen and (min-width: $tablet-width) {
+    padding: 20px 0 10px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    padding: 30px 0;
+  }
+  li {
+    display: inline-block;
+    a,
+    span {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 20px;
+      color: $breadcrumb-color;
+      font-family: "Mardoto-Regular", sans-serif;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        font-size: 10px;
+      }
+    }
+
+    a:hover{
+      color: $green;
+    }
+    i {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: url("../images/arrow-right.svg") no-repeat center;
+      vertical-align: middle;
+      background-size: 100%;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    span {
+      color: $primary-color;
+    }
+  }
+}

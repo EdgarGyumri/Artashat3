@@ -1,0 +1,402 @@
+@import "variables";
+@import "main";
+@import "left-navigation";
+@import "breadcrumb-menu";
+@import "subscribe";
+@import "slider";
+#products {
+  font-family: "Mardoto-Regular", sans-serif;
+  .flex-row {
+    flex-direction: column;
+    @media screen and (min-width: $desktop-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  .products-list {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: $desktop-width) {
+      justify-content: flex-start;
+    }
+    @media screen and (max-width: $desktop-width) {
+      margin: 20px 0 0;
+    }
+  }
+
+  .product-info {
+    width: 300px;
+    text-align: center;
+    margin: 0 0 25px;
+    @include rounded(4px);
+    @media screen and (max-width: ($desktop-width - 1px)) {
+      background: url('../images/gradient.png') no-repeat center $gray-bg;
+      width: 335px;
+    }
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      margin: 0 10px 25px;
+      width: 280px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      margin: 0 20px 20px 0;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin: 0 30px 0 0;
+      
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      margin: 0 25px 40px 0;
+      width: auto;
+      flex-basis: 30%;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      width: 360px;
+      margin: 0 40px 50px 0;
+    }
+    div {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      transform: scale(1);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      @media screen and (max-width: ($desktop-width - 1px)) {
+        margin: 45px 0 30px;
+        width: 335px;
+      }
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        width: 280px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        background-color: $product-bg;
+        padding: 20px 0 10px;
+        height: 240px;
+      }
+
+      @media screen and (min-width: $desktop-large-width) {
+        width: auto;
+      }
+
+      @media screen and (min-width: $desktop-xl-width) {
+        width: 360px;
+        height: 260px;
+      }
+      img {
+        max-width: 100%;
+        transition: transform .5s ease;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+    figcaption {
+      padding-top: 10px;
+      @media screen and (min-width: $tablet-width) {
+        padding-top: 20px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        padding: 30px 0 20px;
+        background-color: $white;
+      }
+      h2,
+      p {
+        font-size: 16px;
+        line-height: 21px;
+        font-family: "Mardoto-Regular", sans-serif;
+        @media screen and (min-width: $desktop-width) {
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+      p {
+        color: rgba(15, 31, 43, 0.61);
+        @media screen and (max-width: ($desktop-width - 1px)) {
+          padding: 30px 0;
+        }
+        @media screen and (min-width: $desktop-width) {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .prduct-slider {
+    
+    height: 410px;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      // justify-content: space-between;
+      // flex-direction: row;
+      // flex-wrap: nowrap;
+    }
+    @media screen and (min-width: $desktop-width) {
+      justify-content: space-between;
+      width: 100%;
+      height: 370px;
+    }
+
+    .product-info {
+      width: 100%;
+      min-width: 300px;
+      @media screen and (min-width: $mobile-width) {
+       width: 80%;
+      }
+      @media screen and (min-width: $tablet-width) {
+        margin: 0 10px 20px;
+        flex-basis: 46%;
+      }
+
+      @media screen and (min-width: $desktop-width) {
+        flex-basis: 31%;
+      }
+
+      @media screen and (min-width: $desktop-large-width) {
+        flex-basis: 20%;
+        margin: 0 0 20px;
+      }
+
+      @media screen and (min-width: $desktop-xl-width) {
+        flex-basis: 24%;
+      }
+
+      div{
+        width: 100%;
+        min-width: 300px;
+        @media screen and (min-width: $tablet-width) {
+          flex-basis: 48%;
+        }
+
+        @media screen and (min-width: $desktop-large-width) {
+          flex-basis: 20%;
+        }
+
+        @media screen and (min-width: $desktop-xl-width) {
+          flex-basis: 24%;
+        }
+
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+  
+}
+
+.line-after {
+  display: block;
+  font-size: 32px;
+  line-height: 32px;
+  font-family: "Mardoto-Regular", sans-serif;
+  position: relative;
+  margin: 55px 0;
+  @media screen and (max-width: ($desktop-width - 1px)) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    margin: 70px 0;
+  }
+  &:after {
+    @media screen and (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      width: calc(100% - 225px);
+      height: 1px;
+      background: $primary-color;
+      right: 0;
+      top: 50%;
+      position: absolute;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: calc(100% - 440px);
+    }
+  }
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    border-bottom: 0.5px solid $primary-color;
+    margin: 30px 0;
+    padding-bottom: 10px;
+  }
+}
+
+.single-product {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: ($desktop-width - 1px)) {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .product-top {
+    display: flex;
+    width: 100%;
+    @media screen and (max-width: ($desktop-large-width - 1px)) {
+      flex-direction: column;
+    }
+    
+    @media screen and (min-width: $desktop-large-width) {
+      justify-content: space-between;
+    }
+    .product-left {
+      display: flex;
+      @media screen and (max-width: ($desktop-large-width - 1px)) {
+        flex-direction: column;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        width: calc( 100% - 650px);
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        width: calc( 100% - 735px);
+      }
+    }
+    p {
+      span {
+        color: rgba(15, 31, 43, 0.61);
+        font-size: 14px;
+      }
+      strong {
+        @media screen and (max-width: ($tablet-width - 1px)) {
+          display: block;
+        }
+      }
+    }
+    .producst-small {
+      display: flex;
+      flex-direction: column;
+      @media screen and (max-width: ($desktop-large-width - 1px)) {
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      div {
+       
+        cursor: pointer;
+        @media screen and (max-width: ($desktop-large-width - 1px)) {
+          margin-right: 15px;
+        }
+        @media screen and (min-width: $desktop-large-width) {
+          margin: 0 25px 25px 0;
+        }
+
+        img{
+          transition: transform .5s ease;
+        }
+
+        &:hover{
+          img{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    .product {
+      text-align: center;
+      width: 100%;
+      div {
+        background-color: $product-bg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: ($tablet-width - 1px)) {
+          height: 330px;
+          width: 100%;
+        }
+        @media screen and (max-width: ($desktop-width - 1px)) {
+          background: url('../images/gradient.png') no-repeat center $gray-bg;
+        }
+        @media screen and (max-width: $desktop-width) {
+          margin-bottom: 10px;
+        }
+        @media screen and (min-width: $desktop-large-width) {
+          height: 565px;
+        }
+        @media screen and (min-width: $desktop-xl-width) {
+          height: 655px;
+          max-width: 806px;
+        }
+        img {
+          width: 100%;
+        }
+        &+a {
+          display: inline-block;
+          margin: 20px 0;
+
+          @media screen and (max-width: ($desktop-width - 1px)) {
+            display: none;
+          }
+
+          .back-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            background: url(../images/back-icon.svg) no-repeat center;
+            margin-right: 5px;
+            transition: transform .5s ease;
+          }
+
+          &:hover {
+            .back-icon {
+              background-size: 105%;
+              transform: translateX(-20px);
+            }
+          }
+        }
+
+      }
+    }
+    h1 {
+      border-bottom: 1px solid $green;
+      padding-top: 0;
+      @media screen and (max-width: ($desktop-width - 1px)) {
+        margin-top: 20px;
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 28px;
+      margin: 25px 0 20px;
+      @media screen and (min-width: $desktop-xl-width) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      @media screen and (min-width: $desktop-xl-width) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        max-width: 520px;
+        white-space: normal;
+        word-break: break-word;
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        max-width: 635px;
+      }
+    }
+    .about-product {
+      margin: 30px 0;
+      @media screen and (min-width: $desktop-large-width) {
+        margin: 45px 0 125px;
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        margin: 60px 0 175px;
+      }
+    }
+  }
+}

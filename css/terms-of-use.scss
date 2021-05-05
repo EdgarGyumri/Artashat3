@@ -1,0 +1,83 @@
+@import "variables";
+@import "main";
+@import "breadcrumb-menu";
+@import "left-navigation";
+@import "subscribe";
+
+#terms-of-us {
+  color: $primary-color;
+  font-family: "Mardoto-Regular", sans-serif;
+  .flex-row {
+    flex-wrap: wrap;
+  }
+
+  .info{
+    @media screen and (max-width: $desktop-width) and (min-width: $tablet-width) {
+      width: calc(100% - 320px);
+    }
+  }
+  
+  h1 {
+    @media screen and (min-width: $desktop-large-width) {
+      margin-bottom: 30px;
+    }
+  }
+  .divider {
+    @media screen and (max-width: ($desktop-large-width - 1px)) {
+      margin-bottom: 20px;
+    }
+  }
+  .left-navigation {
+    padding-top: 10px;
+    @media screen and (min-width: $desktop-width) {
+      padding-top: 35px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      padding-top: 130px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding-top: 150px;
+    }
+  }
+  p,
+  a,
+  li {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Mardoto-Regular", sans-serif;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  p {
+    margin-bottom: 15px;
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 30px;
+    }
+    strong,
+    span {
+      display: block;
+    }
+  }
+
+  .icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    a{
+      margin: 0 10px;
+    }
+  }
+}

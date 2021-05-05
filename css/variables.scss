@@ -1,0 +1,46 @@
+$mobile-small-width: 360px;
+$mobile-width: 599px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-large-width: 1366px;
+$desktop-xl-width: 1680px;
+
+@mixin rounded($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
+  box-shadow: $x-axis $y-axis $blur $color;
+  -moz-box-shadow: $x-axis $y-axis $blur $color;
+  -webkit-box-shadow: $x-axis $y-axis $blur $color;
+}
+
+@mixin rotate ($deg){
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate(1$deg);
+  transform: rotate($deg);
+}
+
+$white: #ffffff;
+$black: #000000;
+$dark: #1E2D38;
+$primary-color: #0f1f2b;
+$background: #fffefe;
+$grey-bg: #F6FAEF;
+$green: #7bb928;
+$gray: #707070;
+$grey-border: #a7a7a7;
+$light-grey: #b5b9bd;
+$breadcrumb-color: #6f7980;
+$green-light: #C0DD98;
+$gray-bg: #ECF5E0;
+$dark-grey: #626F6E;
+$gray-bg: #F9F9F9;
+$grey-light: #6E777F;
+$light-background:#F7FAF2;
+$product-bg: #eeeaea;
+$hover-bg: #d5d5d5;

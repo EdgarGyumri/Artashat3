@@ -1,0 +1,123 @@
+@import "variables";
+@import "main";
+@import "breadcrumb-menu";
+@import "subscribe";
+
+#site-map {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Mardoto-Regular", sans-serif;
+  @media screen and (min-width: $desktop-large-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.site-map-content {
+  background: url('../images/sitemap.svg') no-repeat left top;
+  background-size: 100%;
+
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    background-size: contain;
+    background-position: top center;
+  }
+  @media screen and (min-width: $desktop-width) {
+    background-size: cover;
+    background-position: left -45px;
+  }
+
+  @media screen and (min-width: $desktop-large-width) {
+    background-size: cover;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.map-site {
+  padding-top: 20px;
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 60px;
+  }
+  .flex-row {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: $tablet-width) {
+      justify-content: space-evenly;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 110px;
+    }
+  }
+  h2 {
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: "Mardoto-Medium", sans-serif;
+    @media screen and (max-width: ($desktop-width - 1px)) {
+      padding-top:15px;
+      font-weight: bold;
+    }
+    @media screen and (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 27px;
+    }
+    &+ul {
+      margin-left: 25px;
+      @media screen and (max-width: ($desktop-width - 1px)) {
+        margin-left:10px;
+      }
+      li {
+        list-style-type: none;
+        padding: 8px 0;
+        @media screen and (max-width: ($desktop-width - 1px)) {
+          padding: 5px 0;
+        }
+        &::before {
+          content: "\2022";
+          color: $green;
+          font-weight: bold;
+          display: inline-block;
+          padding-right: 20px;
+          @media screen and (max-width: ($desktop-width - 1px)) {
+            padding-right: 10px;
+          }
+        }
+        a {
+          display: inline-block;
+          &:hover {
+            color: $green;
+          }
+        }
+        ul {
+          margin-left: 15px;
+          @media screen and (max-width: ($desktop-width - 1px)) {
+            margin-left:20px;
+          }
+          li {
+            &::before {
+              content: "\25e6";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,76 @@
+input,
+span,
+textarea,
+label,
+a,
+span {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+label {
+  display: block;
+}
+
+@media screen and (max-width: 1366px) {
+  label {
+    padding-top: 15px;
+  }
+}
+
+label + span {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #7bb928;
+  padding: 8px 10px 0 0;
+  position: absolute;
+}
+
+input {
+  border: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #0f1f2b;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  input.input-width {
+    width: 450px;
+  }
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #7bb928;
+}
+
+input[type="file"] {
+  font-size: 0;
+  background: none;
+  padding: 0;
+}
+
+input[type="file"]:focus, input[type="file"]:visited {
+  font-size: 16px;
+  margin-left: -60px;
+}
+
+textarea {
+  height: 252px;
+  width: 100%;
+  padding: 15px;
+  resize: none;
+}
+
+@media screen and (min-width: 1680px) {
+  textarea {
+    width: 830px;
+  }
+}
+
+textarea:focus {
+  outline: none;
+  border: 1.5px solid #7bb928;
+}
+/*# sourceMappingURL=form.css.map */

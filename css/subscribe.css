@@ -1,0 +1,195 @@
+#subscribe {
+  padding: 30px 0 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #subscribe {
+    padding: 70px 0 60px;
+  }
+}
+
+.subscribe-message {
+  transition: .7s;
+  transform: scale(0);
+}
+
+.subscribe-message.active{
+  transform: scale(1);
+}
+
+@media screen and (min-width: 1024px) {
+  #subscribe {
+    padding: 110px 0 100px;
+  }
+}
+
+#subscribe h3 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 24px;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  #subscribe h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #subscribe h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #subscribe {
+    width: 618px;
+    margin: 0 auto;
+  }
+}
+
+#subscribe form div {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0 10px;
+}
+
+@media screen and (min-width: 599px) {
+  #subscribe form div {
+    border-bottom: 1px solid #0f1f2b;
+    padding: 25px 0 15px;
+  }
+}
+
+#subscribe .subscribe-message {
+  text-align: center;
+  border-bottom: 0;
+}
+
+#subscribe .subscribe-message p {
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  #subscribe .subscribe-message p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #subscribe .subscribe-message p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #subscribe .subscribe-message p {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+#subscribe .subscribe-message i {
+  display: block;
+  margin: 0 auto 5px;
+  width: 35px;
+  height: 35px;
+  background: url("../images/subscribe-icon.svg") no-repeat center;
+}
+
+@media screen and (min-width: 1024px) {
+  #subscribe .subscribe-message i {
+    margin: 0 auto 10px;
+  }
+}
+
+#subscribe input {
+  width: 100%;
+  color: #707070;
+  border: 0;
+  font-family: "Mardoto-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 768px) {
+  #subscribe input {
+    width: calc(100% - 150px);
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe input {
+    border-bottom: 1px solid #0f1f2b;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+#subscribe input::-webkit-input-placeholder {
+  color: #707070;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe input::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+#subscribe input::-moz-placeholder {
+  color: #707070;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+#subscribe input:-moz-placeholder {
+  color: #707070;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe input:-moz-placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+#subscribe input:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  #subscribe .btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+/*# sourceMappingURL=subscribe.css.map */

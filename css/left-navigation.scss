@@ -1,0 +1,57 @@
+@import "variables";
+.left-navigation {
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    width: 430px;
+    margin-right: 40px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    margin-right: 80px;
+    max-width: 505px;
+  }
+  ul {
+    padding-left: 20px;
+    @media screen and (min-width: $tablet-width) {
+      padding-left: 30px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      padding-left: 25px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      padding-left: 50px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding-left: 60px;
+    }
+    &:first-child {
+      padding-left: 0;
+    }
+    li {
+      list-style-type: none;
+      a {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Mardoto-Regular", sans-serif;
+        color: $primary-color;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        @media screen and (min-width: $tablet-width) {
+          font-size: 20px;
+          line-height: 27px;
+        }
+        &:hover,
+        &:focus {
+          color: $green;
+          .caret {
+            background: url("../images/arrow-green.svg") no-repeat center;
+            background-size: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+

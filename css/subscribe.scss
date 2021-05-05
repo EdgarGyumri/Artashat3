@@ -1,0 +1,124 @@
+@import "variables";
+#subscribe {
+  padding: 30px 0 50px;
+  @media screen and (min-width: $tablet-width) {
+    padding: 70px 0 60px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    padding: 110px 0 100px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Mardoto-Regular", sans-serif;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+  @media screen and (min-width: $tablet-width) {
+    width: 618px;
+    margin: 0 auto;
+  }
+  form {
+    div {
+      width: 100%;
+      justify-content: space-between;
+      padding: 15px 0 10px;
+      @media screen and (min-width: $mobile-width) {
+        border-bottom: 1px solid $primary-color;
+        padding: 25px 0 15px;
+      }
+    }
+  }
+  .subscribe-message {
+    text-align: center;
+    border-bottom: 0;
+    p {
+      font-family: "Mardoto-Regular", sans-serif;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        margin-bottom: 15px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      @media screen and (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+    }
+    i {
+      display: block;
+      margin: 0 auto 5px;
+      width: 35px;
+      height: 35px;
+      background: url("../images/subscribe-icon.svg") no-repeat center;
+      @media screen and (min-width: $desktop-width) {
+        margin: 0 auto 10px;
+      }
+    }
+  }
+  input {
+    width: 100%;
+    color: $gray;
+    border: 0;
+    font-family: "Mardoto-Regular", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    @media screen and (min-width: $tablet-width) {
+      width: calc(100% - 150px);
+      font-size: 16px;
+      line-height: 21px;
+    }
+    @media screen and (max-width: ($mobile-width - 1px)) {
+      border-bottom: 1px solid $primary-color;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+    &::-webkit-input-placeholder {
+      color: $gray;
+      font-size: 16px;
+      @media screen and (max-width: ($mobile-width - 1px)) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &::-moz-placeholder {
+      color: $gray;
+      font-size: 16px;
+      @media screen and (max-width: ($mobile-width - 1px)) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &:-moz-placeholder {
+      color: $gray;
+      font-size: 16px;
+      @media screen and (max-width: ($mobile-width - 1px)) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+  .flex-row {
+    @media screen and (max-width: ($mobile-width - 1)) {
+      flex-direction: column;
+    }
+  }
+  .btn {
+    @media screen and (max-width: ($mobile-width - 1)) {
+      align-self: center;
+    }
+  }
+}

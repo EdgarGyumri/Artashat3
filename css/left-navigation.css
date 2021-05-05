@@ -1,0 +1,82 @@
+@media screen and (min-width: 768px) {
+  .left-navigation {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .left-navigation {
+    width: 430px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .left-navigation {
+    margin-right: 80px;
+    max-width: 505px;
+  }
+}
+
+.left-navigation ul {
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .left-navigation ul {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .left-navigation ul {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .left-navigation ul {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .left-navigation ul {
+    padding-left: 60px;
+  }
+}
+
+.left-navigation ul:first-child {
+  padding-left: 0;
+}
+
+.left-navigation ul li {
+  list-style-type: none;
+}
+
+.left-navigation ul li a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Mardoto-Regular", sans-serif;
+  color: #0f1f2b;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .left-navigation ul li a {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.left-navigation ul li a:hover, .left-navigation ul li a:focus {
+  color: #7bb928;
+}
+
+.left-navigation ul li a:hover .caret, .left-navigation ul li a:focus .caret {
+  background: url("../images/arrow-green.svg") no-repeat center;
+  background-size: 100%;
+}
+/*# sourceMappingURL=left-navigation.css.map */

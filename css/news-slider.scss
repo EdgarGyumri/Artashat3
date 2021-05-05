@@ -1,0 +1,357 @@
+@import "variables";
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 35px;
+  width: auto;
+  
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    margin: 10px 15px 20px;
+  }
+  
+  @media screen and (min-width: $desktop-large-width) {
+    margin: 15px 20px 20px;
+  }
+  @media screen and (min-width: $desktop-xl-width) {
+    margin: 20px 25px 40px;
+  }
+  span {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Mardoto-Light", sans-serif;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      font-size: 12px;
+    }
+  }
+
+  .share {
+    font-family: "Mardoto-Light", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      font-size: 12px;
+    }
+
+    .share-icon {
+      display: inline-block;
+      background-color: transparent;
+      width: 44px;
+      height: 44px;
+      @include rounded(50px);
+      vertical-align: middle;
+      margin-right: 5px;
+      text-align: center;
+      padding: 10px 7px;
+
+      span{
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/share-image.svg) center;
+        background-size: 100%;
+        
+      }
+    }
+
+    &:hover {
+      .text {
+        transform: translateX(-10px) scale(0.8);
+      }
+
+      .share-icon{
+        background-color: $hover-bg;
+      }
+
+    }
+  }
+}
+
+.news-card {
+  display: flex;
+  background-color: $white;
+  @include box-shadow(3px, 3px, 16px, rgba(0, 0, 0, 0.16));
+  @include rounded(2px);
+  overflow: hidden;
+  margin-bottom: 50px;
+  @media screen and (max-width: ($tablet-width - 1px)) {
+    flex-wrap: wrap;
+    margin: 5px 10px 20px;
+    width: 300px;
+  }
+  @media screen and (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: $desktop-large-width) {
+    flex-direction: row;
+  }
+  .news-image {
+    width: 100%;
+    height: 306px;
+    overflow: hidden;
+    cursor: pointer;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      width: auto;
+      height: 150px;
+    }
+    @media screen and (min-width: $tablet-width) {
+     width: auto;
+    }
+
+    @media screen and (min-width: $desktop-large-width) {
+      height: 330px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      width: 610px;
+      height: 415px;
+    }
+    img {
+      width: 100%;
+      height: 306px;
+      transition: transform .5s ease;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        height: 150px;
+      }
+      @media screen and (min-width: $desktop-large-width) {
+        height: 330px;
+      }
+      @media screen and (min-width: $desktop-xl-width) {
+        height: 415px;
+      }
+    }
+
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }&:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 43px;
+    margin-left: 15px;
+    padding-bottom: 35px;
+    margin: 0;
+    font-family: "Mardoto-Medium", sans-serif;
+    @media screen and (max-width: ($desktop-width - 1px)) {
+      font-size: 16px;
+      line-height: 21px;
+      max-width: 100%;
+      margin: 0 0 0 20px;
+    }
+    @media screen and (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 480px;
+      margin-left: 25px;
+      padding-bottom: 45px;
+      font-size: 26px;
+      line-height: 36px;
+    }
+   
+    @media screen and (min-width: $desktop-xl-width) {
+      padding-bottom: 90px;
+    }
+    a {
+      font-size: 32px;
+      line-height: 43px;
+      text-decoration: underline;
+      @media screen and (max-width: ($tablet-width - 1px)) {
+        font-size: 16px;
+        line-height: 21px;
+      }
+
+      @media screen and (min-width: $tablet-width) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+      @media screen and (min-width: $desktop-width) {
+      font-size: 26px;
+      line-height: 36px;
+      }
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0 20px;
+    padding-bottom: 20px;
+    font-family: "Mardoto-Light", sans-serif;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      font-size: 14px;
+      line-height: 19px;
+      max-width: 100%;
+      margin: 0 15px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 480px;
+      padding-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      max-height: 103px;
+      overflow: hidden;
+      padding: 0;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding-bottom: 30px;
+      margin: 0 25px;
+    }
+  }
+  .read-more {
+    border-top: 0.5px solid $primary-color;
+    padding: 15px 0 20px;
+    text-align: center;
+    margin-top: 20px;
+    @media screen and (max-width: ($tablet-width - 1px)) {
+      padding: 15px 0;
+      margin-top: 0;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      margin-top: 15px;
+      padding: 15px 0;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding: 20px 0;
+    }
+    a {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+.slide-iteams {
+  .news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 470px;
+    overflow: hidden;
+    padding: 0 15px;
+    @media screen and (max-width: ($desktop-width - 1px)) {
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      height: 630px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      height: 640px;
+    }
+
+    @media screen and (min-width: $desktop-large-width) {
+      height: auto;
+      margin: 0 -15px 0;
+    }
+
+    .date{
+      width: auto;
+    }
+  }
+}
+
+.slider-card {
+  flex-direction: column;
+  @include rounded(16px);
+  overflow: initial;
+
+  @media screen and (max-width: ($tablet-width - 1px)) {
+   margin: 15px 10px 50px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: 535px;
+    margin: 0 auto 50px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 45%;
+  }
+
+  @media screen and (min-width: $desktop-large-width) {
+    flex-basis: 30%;
+    margin: 0 auto 25px;
+  }
+
+  .news-image {
+    margin: 0 -15px;
+    @include box-shadow(3px,3px,16px,rgba(0, 0, 0, 0.16));
+    @include rounded(16px);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    @media screen and (min-width: $desktop-xl-width) {
+      max-width: 534px;
+    }
+
+    img {
+      width: 100%;
+      transition: transform .5s ease;
+    }
+
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+  .date {
+    @media screen and (min-width: $desktop-large-width) {
+      margin: 10px 30px 20px;
+    }
+
+    @media screen and (min-width: $desktop-xl-width) {
+      margin: 10px 40px 25px;
+    }
+  }
+  p {
+    @media screen and (min-width: $desktop-width) {
+      max-height: 45px;
+      max-width: max-content;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: $desktop-large-width) {
+      max-height: 103px;
+    }
+  }
+  h2 {
+    white-space: normal;
+    word-break: break-word;
+    @media screen and (min-width: $desktop-large-width) {
+      max-width: 245px;
+      margin-left: 30px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 40px 45px;
+    }
+  }
+  .read-more {
+    font-family: "Mardoto-Regular", sans-serif;
+    @media screen and (min-width: $desktop-xl-width) {
+      margin-top: 40px;
+      padding: 35px 0 30px;
+    }
+  }
+}
+
+
+
+

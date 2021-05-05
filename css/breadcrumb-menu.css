@@ -1,0 +1,60 @@
+.breadcrumb-menu {
+  padding: 15px 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .breadcrumb-menu {
+    padding: 20px 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .breadcrumb-menu {
+    padding: 30px 0;
+  }
+}
+
+.breadcrumb-menu li {
+  display: inline-block;
+}
+
+.breadcrumb-menu li a,
+.breadcrumb-menu li span {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6f7980;
+  font-family: "Mardoto-Regular", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb-menu li a,
+  .breadcrumb-menu li span {
+    font-size: 10px;
+  }
+}
+
+.breadcrumb-menu li a:hover {
+  color: #7bb928;
+}
+
+.breadcrumb-menu li i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/arrow-right.svg") no-repeat center;
+  vertical-align: middle;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb-menu li i {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.breadcrumb-menu li span {
+  color: #0f1f2b;
+}
+/*# sourceMappingURL=breadcrumb-menu.css.map */

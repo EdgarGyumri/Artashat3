@@ -1,0 +1,106 @@
+@import "variables";
+@import "main";
+@import "breadcrumb-menu";
+@import "left-navigation";
+@import "subscribe";
+#announcements {
+  h1 {
+    @media screen and (min-width: $desktop-large-width) {
+      margin-bottom: 30px;
+    }
+  }
+  .flex-row {
+    flex-wrap: wrap;
+  }
+
+  .info{
+    @media screen and (max-width: $desktop-width) and (min-width: $tablet-width) {
+      width: calc(100% - 320px);
+    }
+  }
+  
+  .divider {
+    @media screen and (max-width: ($desktop-large-width - 1px)) {
+      margin-bottom: 20px;
+    }
+  }
+  p,
+  a,
+  li {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Mardoto-Regular", sans-serif;
+    @media screen and (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  .left-navigation {
+    padding-top: 10px;
+    @media screen and (min-width: $desktop-width) {
+      padding-top: 35px;
+    }
+    @media screen and (min-width: $desktop-large-width) {
+      padding-top: 130px;
+    }
+    @media screen and (min-width: $desktop-xl-width) {
+      padding-top: 150px;
+    }
+  }
+  .announcements-content {
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+    p,
+    li {
+      margin-bottom: 15px;
+      @media screen and (min-width: $tablet-width) {
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: $desktop-width) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .announcements-item {
+    display: flex;
+    margin-bottom: 20px;
+    @media screen and (min-width: $desktop-xl-width) {
+      margin-bottom: 40px;
+    }
+    div {
+      min-width: 75px;
+      height: 77px;
+      background: url("../images/calendar.svg") no-repeat center;
+      background-size: 100%;
+      font-family: "Mardoto-Regular", sans-serif;
+      margin-right: 25px;
+      text-align: center;
+      strong,
+      span {
+        display: block;
+      }
+      strong {
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 28px;
+      }
+      span {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+    p {
+      line-height: 32px;
+    }
+  }
+}
