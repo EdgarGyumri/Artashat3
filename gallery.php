@@ -15,6 +15,113 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/gallery.css">
     <script src="main.js"></script>
+    <style>
+      .splide__slide__item:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: rgba(15, 31, 43, 0.5);
+        -webkit-transition: height 0.2s ease;
+        transition: height 0.2s ease;
+      }
+
+      .splide__slide__item:hover .splide__slide__item:before {
+        background: transparent;
+      }
+
+      .splide__slide__item {
+        min-width: 90px;
+        height: 90px !important;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+      .slider-container .slider-iteam {
+        position: relative;
+        z-index: 5;
+      }
+
+      .slider-big:before{
+        content: " ";
+        display: block !important;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        background: url(../images/gallery-overlay.png) no-repeat center bottom !important;
+        -webkit-transition: height 0.2s ease !important;
+        transition: height 0.2s ease;
+      }
+      .splide__slide__item {
+        border: none !important;
+      }
+      @media screen and (min-width: 768px) {
+        .slider-container .slider-items li.is-active:before {
+          height: 0%;
+        }
+        .slider-container .slider-items li:hover:before {
+          height: 0%;
+        }
+        .slider-container .slider-items {
+          position: absolute;
+          bottom: 100px;
+          margin: 0 40px 15px;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          width: calc( 100% - 180px);
+          overflow: hidden;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        .splide-slide {
+          margin-right: 20px;
+        }
+        .slider-container .splide-slide::before {
+          content: " ";
+          display: block;
+          position: absolute;
+          height: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          background: rgba(15, 31, 43, 0.5);
+          -webkit-transition: height 0.2s ease;
+          transition: height 0.2s ease;
+        }
+      }
+      .splide-slide {
+        min-width: 90px;
+        height: 90px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+      @media screen and (min-width: 768px) {
+        .slider-container .slider-items li.is-active:before {
+          height: 0%;
+        }
+        .slider-container .slider-items li:hover:before {
+          height: 0%;
+        }
+      }
+      .splide__arrow{
+        width: 45px;
+        height: 45px;
+      }
+      .splide__arrow:first-child{
+        left: -55px;
+      }
+      .splide__arrow:last-child{
+        right: -55px;
+      }
+    </style>
   </head>
   <body id="body">
     <?php require_once 'header.php'; ?>
@@ -38,13 +145,13 @@
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide slider-big">
-                  <img src="images/slider-iteam.jpg" style="display: block !important">
+                  <img src="images/gallery-3.jpg" style="display: block !important">
                 </li>
                 <li class="splide__slide slider-big">
-                  <img src="images/slider-iteam-2.jpg" style="display: block !important">
+                  <img src="images/gallery-1.jpg" style="display: block !important">
                 </li>
                 <li class="splide__slide slider-big">
-                  <img src="images/slider-iteam.jpg" style="display: block !important">
+                  <img src="images/gallery-3.jpg" style="display: block !important">
                 </li>
               </ul>
             </div>

@@ -113,3 +113,27 @@
 
 
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBEQQh_QTaeyTuh2hcrczIHxZ6Uxx8XqAo",
+    authDomain: "artashat-spa-85ba8.firebaseapp.com",
+    projectId: "artashat-spa-85ba8",
+    storageBucket: "artashat-spa-85ba8.appspot.com",
+    messagingSenderId: "803231484075",
+    appId: "1:803231484075:web:d3b4e24883a42aa0d50fee",
+    measurementId: "G-20H65D8E9H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>

@@ -2536,6 +2536,11 @@ h2 {
 
 .single-product .product-top .product div img {
   width: 100%;
+  transition: all .4s;
+}
+
+.single-product .product-top .product div img:hover{
+  transform: scale(1.2)
 }
 
 .single-product .product-top .product div + a {

@@ -329,7 +329,7 @@
   }
 }
 
-.news-card .read-more a {
+#news-splide .read-more a {
   display: inline-block;
   font-size: 16px;
   line-height: 21px;

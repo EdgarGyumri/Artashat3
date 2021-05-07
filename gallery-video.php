@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
     <script src="js/main.js"></script>
+    <style>
+      .splide__slide__item{
+        border: none !important;
+      }
+    </style>
   </head>
   <body id="body">
     <?php require_once 'header.php'; ?>
@@ -33,8 +38,8 @@
 
         <h1 class="heading">ՏԵսադարան</h1>
 
-        <div class="slider-container">
-          <div id="primary-slider" class="splide">
+        <div class="slider-container gallery-video-slider">
+          <div id="primary-slider" class="splide video-slider">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide splide__slide__item">
@@ -218,23 +223,10 @@
     <script>
       document.addEventListener( 'DOMContentLoaded', function () {
         var secondarySlider = new Splide( '#secondary-slider', {
-          fixedWidth  : 100,
-          height      : 60,
           gap         : 10,
           cover       : true,
-          isNavigation: true,
           focus       : 'center',
-          autoplay: true,
-          rewind: true,
-          pauseOnFocus: false,
-          pauseOnHover: false,
           arrows: false,
-          breakpoints : {
-            '600': {
-              fixedWidth: 66,
-              height    : 40,
-            }
-          },
         } ).mount();
         
         var primarySlider = new Splide( '#primary-slider', {
@@ -243,6 +235,8 @@
           pagination : false,
           arrows     : true,
           cover      : true,
+          rewind: true,
+          isNavigation: true,
         } ); // do not call mount() here.
         
         primarySlider.sync( secondarySlider ).mount();

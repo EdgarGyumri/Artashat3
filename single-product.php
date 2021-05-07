@@ -11,8 +11,27 @@
     <link href="images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
     <link href="/safari-pinned-tab.svg" rel="mask-icon">
     <link href="css/products.css" rel="stylesheet" type="text/css">
-    <script src="js/main.js">
-    </script>
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <script src="js/main.js"></script>
+    <style>
+      .splide__arrow svg {
+        width: 50px;
+        height: 50px;
+      }
+      .splide__arrow:first-child{
+        left: -55px;
+      }
+      .splide__arrow:last-child{
+        right: -55px;
+      }
+      .splide__arrow{
+        background: transparent;
+        width: 32px;
+        height: 32px;
+      }
+    </style>
   </head>
   <body id="body">
     <?php require_once 'header.php'; ?>
@@ -78,75 +97,129 @@
             </div>
           </div>
           <h3 class="line-after">Նման ապրանքատեսակներ</h3>
-          <div class="slider-container">
-            <div class="slide-iteams">
-              <i class="prev"></i> 
-              <i class="next"></i>
-              <div class="products-list prduct-slider">
-
-                <figure class="product-info">
-                  <div>
-                    <img alt="Product image" src="images/products/apricot.svg">
-                  </div>
-                  <figcaption>
-                    <h2>Ծիրանի ջեմ</h2>
-                    <p>
-                      <span>1000գ․</span> | 
-                      <span>730գ․</span> | 
-                      <span>430գ․</span>
-                    </p>
-                  </figcaption>
-                </figure>
-
-                <figure class="product-info">
-                  <div>
-                    <img alt="Product image" src="images/products/apricot.svg">
-                  </div>
-                  <figcaption>
-                    <h2>Ծիրանի ջեմ</h2>
-                    <p>
-                      <span>1000գ․</span> | 
-                      <span>730գ․</span> | 
-                      <span>430գ․</span>
-                    </p>
-                  </figcaption>
-                </figure>
-
-                <figure class="product-info">
-                  <div>
-                    <img alt="Product image" src="images/products/apricot.svg">
-                  </div>
-                  <figcaption>
-                    <h2>Ծիրանի ջեմ</h2>
-                    <p>
-                      <span>1000գ․</span> | 
-                      <span>730գ․</span> | 
-                      <span>430գ․</span>
-                    </p>
-                  </figcaption>
-                </figure>
-
-                <figure class="product-info">
-                  <div>
-                    <img alt="Product image" src="images/products/apricot.svg">
-                  </div>
-                  <figcaption>
-                    <h2>Ծիրանի ջեմ</h2>
-                    <p>
-                      <span>1000գ․</span> | 
-                      <span>730գ․</span> | 
-                      <span>430գ․</span>
-                    </p>
-                  </figcaption>
-                </figure>
-
-              </div>
+          <div class="splide" id="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                      <figure class="product-info">
+                        <div>
+                          <img alt="Product image" src="images/products/apricot.svg">
+                        </div>
+                        <figcaption>
+                          <h2>Ծիրանի ջեմ</h2>
+                          <p>
+                            <span>1000գ․</span> | 
+                            <span>730գ․</span> | 
+                            <span>430գ․</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="splide__slide">
+                      <figure class="product-info">
+                        <div>
+                          <img alt="Product image" src="images/products/apricot.svg">
+                        </div>
+                        <figcaption>
+                          <h2>Ծիրանի ջեմ</h2>
+                          <p>
+                            <span>1000գ․</span> | 
+                            <span>730գ․</span> | 
+                            <span>430գ․</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                    <li class="splide__slide">
+                      <figure class="product-info">
+                        <div>
+                          <img alt="Product image" src="images/products/apricot.svg">
+                        </div>
+                        <figcaption>
+                          <h2>Ծիրանի ջեմ</h2>
+                          <p>
+                            <span>1000գ․</span> | 
+                            <span>730գ․</span> | 
+                            <span>430գ․</span>
+                          </p>
+                        </figcaption>
+                      </figure>
+                    </li>
+                </ul>
             </div>
-          </div>
+        </div>
+          <!-- <div class="splide" id="splide">
+            <div class="splide__track">
+              
+              <ul class="splide__list">
+                <li class="splide__slide">
+                </li>
+                <li class="splide__slide">
+                  <figure class="product-info">
+                    <div>
+                      <img alt="Product image" src="images/products/apricot.svg">
+                    </div>
+                    <figcaption>
+                      <h2>Ծիրանի ջեմ</h2>
+                      <p>
+                        <span>1000գ․</span> | 
+                        <span>730գ․</span> | 
+                        <span>430գ․</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="splide__slide">
+                  <figure class="product-info">
+                    <div>
+                      <img alt="Product image" src="images/products/apricot.svg">
+                    </div>
+                    <figcaption>
+                      <h2>Ծիրանի ջեմ</h2>
+                      <p>
+                        <span>1000գ․</span> | 
+                        <span>730գ․</span> | 
+                        <span>430գ․</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+                <li class="splide__slide">
+                  <figure class="product-info">
+                    <div>
+                      <img alt="Product image" src="images/products/apricot.svg">
+                    </div>
+                    <figcaption>
+                      <h2>Ծիրանի ջեմ</h2>
+                      <p>
+                        <span>1000գ․</span> | 
+                        <span>730գ․</span> | 
+                        <span>430գ․</span>
+                      </p>
+                    </figcaption>
+                  </figure>
+                </li>
+
+              </ul>
+            </div>
+          </div> -->
         </div>
       </section>
       <?php require_once 'subscribe.php'; ?>
     </main>
     <?php require_once 'footer.php'; ?>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      new Splide( '#splide', {
+          type: 'loop',
+          perPage: 4,
+          perMove: 1,
+          rewind: true,
+          pagination: false,
+          autoplay: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+        } ).mount();
+    </script>
   </body>
 </html>

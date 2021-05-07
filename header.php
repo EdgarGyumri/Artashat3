@@ -1,3 +1,34 @@
+<style>
+  .languages-menu {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .languages-menu__hidden{
+    display: none;
+  }
+
+  .languages-menu__hidden a {
+    padding-bottom: 15px;
+  }
+
+  .languages-menu:hover .languages-menu__hidden{
+    display: block;
+    position: absolute;
+    max-width: 1045px;
+    background-color: #fffefe;
+    box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 3px 8px 25px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    color: #0f1f2b;
+    padding: 20px;
+    top: 80px;
+    right: 3px;
+  }
+</style>
 <header>
   <a class="logo" href="#"></a>
   <div id="mobile-menu">
@@ -106,9 +137,9 @@
         <input placeholder="Որոնել..." type="text"> <button type="submit"></button>
       </div>
     </form>
-    <div>
+    <div class="languages-menu">
       <a class="menu show-menu" href="#">ՀԱՅ <i class="caret"></i></a>
-      <div class="hidden-menu languages">
+      <div class="languages-menu__hidden">
         <a href="#">ENG</a> <a href="#">РУС</a>
       </div>
     </div>

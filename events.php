@@ -11,7 +11,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" type="text/css" href="css/events.css">
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <script src="js/main.js"></script>
+    <style>
+      .splide__arrow svg {
+        width: 50px;
+        height: 50px;
+      }
+      #splide .splide__arrow:first-child{
+        left: -55px;
+      }
+      #splide .splide__arrow:last-child{
+        right: -55px;
+      }
+      #splide .splide__arrow{
+        width: 45px;
+        height: 45px;
+        background: transparent;
+      }
+    </style>
   </head>
   <body id="body">
     <?php require_once 'header.php'; ?>
@@ -32,23 +52,65 @@
 
           <div class="slider-container">
             <div class="slider-iteam slider-big">
-              <i class="prev"></i>
-              <i class="next"></i>
-              <img src="images/event-image.jpg" alt="Event image">
-              <div class="events-info">
-                <h1>
-                  Բաստա <br/>
-                  Մեծ համերգ Երևանում 
-                </h1>
-                <p>
-                  <span class="icon-map"></span>
-                  <span class="text">Հոկտեմբերի 22, 2020, 06։00-11։55</span>
-                </p>
-                <p>
-                  <span class="icon-clock"></span>
-                  <span class="text">Կարեն Դեմիրճյանի անվան մարզահամերգային համալիր</span>
-                </p>
-                <button type="button" class="btn">Ավելին</button>
+              <div class="splide" id="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="images/event-image.jpg" alt="Event image">
+                      <div class="events-info">
+                        <h1>
+                          Բաստա <br/>
+                          Մեծ համերգ Երևանում 
+                        </h1>
+                        <p>
+                          <span class="icon-map"></span>
+                          <span class="text">Հոկտեմբերի 22, 2020, 06։00-11։55</span>
+                        </p>
+                        <p>
+                          <span class="icon-clock"></span>
+                          <span class="text">Կարեն Դեմիրճյանի անվան մարզահամերգային համալիր</span>
+                        </p>
+                        <button type="button" class="btn">Ավելին</button>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <img src="images/event-image.jpg" alt="Event image">
+                      <div class="events-info">
+                        <h1>
+                          Բաստա <br/>
+                          Մեծ համերգ Երևանում 
+                        </h1>
+                        <p>
+                          <span class="icon-map"></span>
+                          <span class="text">Հոկտեմբերի 22, 2020, 06։00-11։55</span>
+                        </p>
+                        <p>
+                          <span class="icon-clock"></span>
+                          <span class="text">Կարեն Դեմիրճյանի անվան մարզահամերգային համալիր</span>
+                        </p>
+                        <button type="button" class="btn">Ավելին</button>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <img src="images/event-image.jpg" alt="Event image">
+                      <div class="events-info">
+                        <h1>
+                          Բաստա <br/>
+                          Մեծ համերգ Երևանում 
+                        </h1>
+                        <p>
+                          <span class="icon-map"></span>
+                          <span class="text">Հոկտեմբերի 22, 2020, 06։00-11։55</span>
+                        </p>
+                        <p>
+                          <span class="icon-clock"></span>
+                          <span class="text">Կարեն Դեմիրճյանի անվան մարզահամերգային համալիր</span>
+                        </p>
+                        <button type="button" class="btn">Ավելին</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -178,5 +240,17 @@
       <?php require_once 'subscribe.php'; ?>
     </main>
     <?php require_once 'footer.php'; ?>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide('#splide', {
+        autoplay: true,
+        rewind: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        drag: true,
+      });
+
+      splide.mount();
+    </script>
   </body>
 <html>

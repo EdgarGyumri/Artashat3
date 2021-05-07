@@ -25,6 +25,79 @@
       .splide__arrow, .top-info, .splide__pagination{
         z-index: 10 !important;
       }
+      .splide__arrow{
+        background: transparent;
+        width: 32px;
+        height: 32px;
+      }
+      #big-splide .splide__arrow--prev{
+        left: 1em !important;
+      }
+      #big-splide .splide__arrow--next{
+        right: 1em !important;
+      }
+      .splide__arrow svg {
+        width: 50px;
+        height: 50px;
+      }
+      #video-splide .splide__slide {
+        margin: 0 10px;
+      }
+      #video-splide .splide__list {
+        width: 100%;
+      }
+      #video-splide .splide__slide iframe,
+      #video-splide .splide__slide video {
+        width: 100%;
+        height: 100%;
+      }
+      #video-splide .splide__arrow{
+        width: 45px;
+        height: 45px;
+      }
+      .splide__arrow:first-child{
+        left: -55px;
+      }
+      .splide__arrow:last-child{
+        right: -55px;
+      }
+      #video-splide .splide__list {
+        display: flex;
+        justify-content: space-between;
+      }
+      #news-splide .splide__slide {
+        box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        -webkit-box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        margin: 0 20px;
+      }
+      @media screen and (max-width: 1300px) {
+        .splide__arrow{
+          width: 35px !important;
+          height: 35px !important;
+        }
+        .splide__arrow:first-child{
+          left: -45px;
+        }
+        .splide__arrow:last-child{
+          right: -45px;
+        }
+        #video-splide .splide__slide {
+          height: 150px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .splide__arrow{
+          width: 25px !important;
+          height: 25px !important;
+        }
+        .splide__arrow:first-child{
+          left: -35px;
+        }
+        .splide__arrow:last-child{
+          right: -35px;
+        }
+      }
     </style>
     <!-- <script src="js/main.js"></script> -->
   </head>
@@ -32,8 +105,8 @@
     <?php require_once 'header.php' ?>
     <main>
       <section  id="homepage-top">
-          <div class="image-container" style=>
-            <div class="splide">
+          <div class="image-container">
+            <div class="splide" id="big-splide">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
@@ -206,33 +279,32 @@
           <section id="gallery-videos">
             <div class="container">
               <h2 class="mb-55">Տեսադարան</h2>
-
               <div class="slider-container">
-                <div class="slide-iteams">
-                  <i class="prev"></i>
-                  <i class="next"></i>
-                  <div class="slide-row">
-                      <div>
+                <div class="splide" id="video-splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
                         <iframe
                           src="https://www.youtube.com/embed/gu9_m0vm7fM" 
                           frameborder="0" 
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                           allowfullscreen>
                         </iframe>
-                      </div>
-                      <div>
+                      </li>
+                      <li class="splide__slide">
                         <video controls>
                           <source src="video/arcnet.io_7-sec_.webm" type="video/webm">
                           <source src="video/arcnet.io(7-sec).mp4" type="video/mp4">
                         </video>
-                      </div>
-                      <div>
+                      </li>
+                      <li class="splide__slide">
                         <video controls>
                           <source src="video/arcnet.io_7-sec_.webm" type="video/webm">
                           <source src="video/arcnet.io(7-sec).mp4" type="video/mp4">
                         </video>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -244,24 +316,22 @@
               <h2 class="mb-55">Նկարադարան</h2>
 
               <div class="slider-container">
-                <div class="slide-iteams">
-                  <i class="prev"></i>
-                  <i class="next"></i>
-
-                  <div class="slide-row">
-                    <div>
-                      <img src="images/gallery-photo-1.jpg" alt="">
-                    </div>
-                    <div>
-                      <img src="images/gallery-photo-2.jpg" alt="">
-                    </div>
-                    <div>
-                      <img src="images/gallery-photo-3.jpg" alt="">
-                    </div>
+                <div class="splide" id="photo-splide">
+                  <div class="splide__track">
+                      <div class="splide__list slide-row">
+                          <div class="splide__slide">
+                            <img src="images/gallery-photo-1.jpg" alt="">
+                          </div>
+                          <div class="splide__slide">
+                            <img src="images/gallery-photo-1.jpg" alt="">
+                          </div>
+                          <div class="splide__slide">
+                            <img src="images/gallery-photo-1.jpg" alt="">
+                          </div>
+                      </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </section>
         </section>
@@ -270,114 +340,112 @@
           <div class="container">
             <h2 class="mb-55">Նորություններ</h2>
             <div class="slider-container">
-              <div class="slide-iteams">
-                <i class="prev"></i>
-                <i class="next"></i>
-
-                <div class="news-container">
-                  <div class="news-card slider-card">
-                    <div class="news-image">
-                      <img src="images/news-iteam.jpg" alt="News Iteam">
-                    </div>
-                    <div>
-                      <div class="date">
-                        <span>07 Օգոստոս, 2020</span>
-                        <a href="#" arial-label="share this news" class="share">
-                          <span class="share-icon">
-                            <span></span>
-                          </span>    
-                          <span class="text">Կիսվել</span>
-                        </a>
+              <div class="splide slide-iteams" id="news-splide">
+                  <div class="splide__track">
+                    <div class="splide__list slide-row">
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
                       </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
 
-                      <h2>
-                        <a href="#">
-                         The quick brown fox jumps
-                        </a>
-                      </h2>
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
 
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Loremtext ever since the 1500s, when an
-                      </p>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
 
-                      <div class="read-more">
-                        <a href="#" aria-label="Read more about this news" class="more">
-                        Կարդալ ավելին
-                        <span class="more-icon"></span>
-                      </a>
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
                       </div>
-                    </div>
-                  </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
 
-                  <div class="news-card slider-card">
-                    <div class="news-image">
-                      <img src="images/news-iteam.jpg" alt="News Iteam">
-                    </div>
-                    <div>
-                      <div class="date">
-                        <span>07 Օգոստոս, 2020</span>
-                        <a href="#" arial-label="share this news" class="share">
-                          <span class="share-icon">
-                            <span></span>
-                          </span>   
-                          <span class="text">Կիսվել</span>
-                        </a>
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
+
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
+
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
                       </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
 
-                      <h2>
-                        <a href="#">
-                         The quick brown fox jumps
-                        </a>
-                      </h2>
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
 
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Loremtext ever since the 1500s, when an
-                      </p>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
 
-                      <div class="read-more">
-                        <a href="#" aria-label="Read more about this news" class="more">
-                        Կարդալ ավելին
-                        <span class="more-icon"></span>
-                      </a>
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div class="news-card slider-card">
-                    <div class="news-image">
-                      <img src="images/news-iteam.jpg" alt="News Iteam">
-                    </div>
-                    <div>
-                      <div class="date">
-                        <span>07 Օգոստոս, 2020</span>
-                        <a href="#" arial-label="share this news" class="share">
-                          <span class="share-icon">
-                            <span></span>
-                          </span>  
-                          <span class="text">Կիսվել</span>
-                        </a>
-                      </div>
-
-                      <h2>
-                        <a href="#">
-                         The quick brown fox jumps
-                        </a>
-                      </h2>
-
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Loremtext ever since the 1500s, when an
-                      </p>
-
-                      <div class="read-more">
-                        <a href="#" aria-label="Read more about this news" class="more">
-                          Կարդալ ավելին
-                          <span class="more-icon"></span>
-                        </a>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -388,42 +456,40 @@
         <section id="partners">
           <div class="container">
           <h2 class="mb-55">Մեր գործընկերները</h2>
-          <div class="flex-row">
-              <div>
-                <a href="#">
-                  <img src="images/partners/amc.svg" alt="Amc logo"/>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                <img src="images/partners/boin.svg" alt="boin logo"/>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                  <img src="images/partners/blue-sky.svg" alt="Amc logo"/>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                  <img src="images/partners/connies.svg" alt="Connies logo"/>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                  <img src="images/partners/maxima.svg" alt="Maxima logo"/>
-                </a>
-              </div>
-
-              <div>
-                <a href="#">
-                  <img src="images/partners/kaufland.svg" alt="Kaufland logo"/>
-                </a>
-              </div>
+          <div class="splide" id="partners-splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                      <a href="#">
+                        <img src="images/partners/amc.svg" alt="Amc logo"/>
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/boin.svg" alt="boin logo"/>
+                    </a>
+                    </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/blue-sky.svg" alt="Amc logo"/>
+                    </a>
+                    </div>
+                    <div class="splide__slide">
+                      <a href="#">
+                        <img src="images/partners/connies.svg" alt="Connies logo"/>
+                      </a>
+                    </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/maxima.svg" alt="Maxima logo"/>
+                    </a>
+                    </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/kaufland.svg" alt="Kaufland logo"/>
+                    </a>
+                    </div>
+                </div>
             </div>
           </div>
         </section>
@@ -433,15 +499,54 @@
     <?php require_once 'footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
-      var splide = new Splide('.splide', {
+      var splide = new Splide('#big-splide', {
         autoplay: true,
         rewind: true,
         pauseOnHover: false,
         pauseOnFocus: false,
-        arrowPath: 'm15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z',
+        drag: true,
+        arrows: true,
       });
 
       splide.mount();
+
+      new Splide( '#video-splide', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            pagination: false,
+            autoplay: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+        } ).mount();
+        new Splide( '#photo-splide', {
+            type   : 'loop',
+            perPage: 3,
+            perMove: 1,
+            pagination: false,
+            autoplay: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+        } ).mount();
+        new Splide( '#news-splide', {
+          type: 'loop',
+          perPage: 3,
+          perMove: 1,
+          pagination: false,
+          autoplay: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+        } ).mount();
+        new Splide( '#partners-splide', {
+            type   : 'loop',
+            perPage: 6,
+            perMove: 3,
+            pagination: false,
+            autoplay: true,
+            pauseOnFocus: false,
+            pauseOnHover: false,
+            arrows: false,
+        } ).mount();
     </script>
   </body>
 <html>
