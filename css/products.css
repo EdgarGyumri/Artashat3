@@ -2530,7 +2530,7 @@ h2 {
 @media screen and (min-width: 1680px) {
   .single-product .product-top .product div {
     height: 655px;
-    max-width: 806px;
+    width: 100%;
   }
 }
 

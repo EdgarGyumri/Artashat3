@@ -30,7 +30,7 @@
   }
 </style>
 <header>
-  <a class="logo" href="#"></a>
+  <a class="logo" href="index.php"></a>
   <div id="mobile-menu">
     <span class="line"></span>
     <div class="languages-mobile">
@@ -78,7 +78,7 @@
     </div>
   </div>
   <nav class="navbar">
-    <a class="menu" href="#">Գլխավոր</a> <a class="menu show-menu" href="#">Մեր մասին <i class="caret"></i></a> <a class="menu show-menu" href="#">Արտադրանք <i class="caret"></i></a> <a class="menu show-menu" href="#">Տեսադարան <i class="caret"></i></a> <a class="menu show-menu" href="#">Նկարադարան <i class="caret"></i></a> <a class="menu show-menu" href="#">Նորություններ <i class="caret"></i></a> <a class="menu" href="#">Տեխնալոգիաներ</a> <a class="menu" href="#">Կապ</a>
+    <a class="menu" href="index.php">Գլխավոր</a> <a class="menu show-menu" href="about-team.php">Մեր մասին <i class="caret"></i></a> <a class="menu show-menu" href="products.php">Արտադրանք <i class="caret"></i></a> <a class="menu show-menu" href="gallery-video.php">Տեսադարան <i class="caret"></i></a> <a class="menu show-menu" href="gallery.php">Նկարադարան <i class="caret"></i></a> <a class="menu show-menu" href="news.php">Նորություններ <i class="caret"></i></a> <a class="menu" href="technology.php">Տեխնալոգիաներ</a> <a class="menu" href="contact-us.php">Կապ</a>
     <div class="hidden-menu">
       <div class="flex-row">
         <div class="menu-items">

@@ -11,7 +11,61 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" type="text/css" href="css/news.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="path-to-the-file/splide.min.css">
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <script src="js/main.js"></script>
+    <style>
+      .is-disabled{
+        display: none;
+      }
+      #news-splide .splide__slide {
+        box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        -moz-box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        -webkit-box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.16);
+        margin: 0 20px;
+      }
+      .splide__arrow:first-child{
+        left: -55px;
+      }
+      .splide__arrow:last-child{
+        right: -55px;
+      }
+      .splide__arrow svg {
+        width: 50px;
+        height: 50px;
+      }
+      .splide__arrow{
+        background: transparent;
+        width: 32px;
+        height: 32px;
+      }
+      @media screen and (max-width: 1300px) {
+        .splide__arrow{
+          width: 35px !important;
+          height: 35px !important;
+        }
+        .splide__arrow:first-child{
+          left: -45px;
+        }
+        .splide__arrow:last-child{
+          right: -45px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .splide__arrow{
+          width: 25px !important;
+          height: 25px !important;
+        }
+        .splide__arrow:first-child{
+          left: -35px;
+        }
+        .splide__arrow:last-child{
+          right: -35px;
+        }
+      }
+    </style>
   </head>
   <body id="body">
     <?php require_once 'header.php'; ?>
@@ -55,8 +109,8 @@
           
             <div class="left-navigation">
               <nav>
-                <ul>
-                  <li>
+              <ul>
+                <li>
                     <a href="#">
                       Կատեգորիա 1
                       <i class="caret"></i>
@@ -64,57 +118,365 @@
                     <ul>
                       <li>
                         <a href="#">
-                          Ենթակատեգորիա
-                          <i class="caret"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Ենթակատեգորիա
-                          <i class="caret"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          Ենթակատեգորիա
+                          Ենթակատեգորիա 
                           <i class="caret"></i>
                         </a>
                         <ul>
-                          <li>
+                        <li>
                             <a href="#">
                               Ենթակատեգորիա
                               <i class="caret"></i>
                             </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա 
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
                           </li>
                           <li>
                             <a href="#">
                               Ենթակատեգորիա
                               <i class="caret"></i>
                             </a>
-                            <ul>
-                              <li>
+                            <ul class="is-disabled">
+                            <li>
                                 <a href="#">
                                   Ենթակատեգորիա
                                   <i class="caret"></i>
                                 </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
                               </li>
                               <li>
                                 <a href="#">
                                   Ենթակատեգորիա
                                   <i class="caret"></i>
                                 </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
                               </li>
                               <li>
                                 <a href="#">
                                   Ենթակատեգորիա
                                   <i class="caret"></i>
                                 </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
                               </li>
                               <li>
                                 <a href="#">
                                   Ենթակատեգորիա
                                   <i class="caret"></i>
                                 </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
                               </li>
                               <li>
                                 <a href="#">
@@ -160,36 +522,7706 @@
                       </li>
                       <li>
                         <a href="#">
-                          Ենթակատեգորիա
+                          Ենթակատեգորիա 
                           <i class="caret"></i>
                         </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a href="#">
-                          Ենթակատեգորիա
+                          Ենթակատեգորիա 
                           <i class="caret"></i>
                         </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
-                  </li>
-                  <li>
-                  <a href="#">
-                    Կատեգորիա 1
-                    <i class="caret"></i>
-                  </a>
                   </li>
                   <li>
                     <a href="#">
                       Կատեգորիա 1
                       <i class="caret"></i>
                     </a>
+                    <ul class="is-disabled">
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul>
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա 
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul class="is-disabled">
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                  <a href="#">
-                    Կատեգորիա 1
-                    <i class="caret"></i>
-                  </a>
-                </li>
+                    <a href="#">
+                      Կատեգորիա 1
+                      <i class="caret"></i>
+                    </a>
+                    <ul class="is-disabled">
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul>
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա 
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul class="is-disabled">
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Կատեգորիա 1
+                      <i class="caret"></i>
+                    </a>
+                    <ul class="is-disabled">
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul>
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա 
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul class="is-disabled">
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul class="is-disabled">
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          Ենթակատեգորիա 
+                          <i class="caret"></i>
+                        </a>
+                        <ul class="is-disabled">
+                        <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="#">
+                              Ենթակատեգորիա
+                              <i class="caret"></i>
+                            </a>
+                            <ul>
+                            <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="#">
+                                  Ենթակատեգորիա
+                                  <i class="caret"></i>
+                                </a>
+                                <ul>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      Ենթակատեգորիա
+                                      <i class="caret"></i>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -305,117 +8337,116 @@
         <strong class="line-after">Այլ նորություններ</strong>
 
         <div class="slider-container">
-        <div class="slide-iteams">
-          <i class="prev"></i>
-          <i class="next"></i>
+              <div class="splide slide-iteams" id="news-splide">
+                  <div class="splide__track">
+                    <div class="splide__list slide-row">
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
+                      </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
 
-          <div class="news-container">
-            <div class="news-card slider-card">
-              <div class="news-image">
-                <img src="images/news-iteam.jpg" alt="News Iteam">
-              </div>
-              <div>
-                <div class="date">
-                  <span>07 Օգոստոս, 2020</span>
-                  <a href="#" aria-label="share this news" class="share">
-                    <span class="share-icon">
-                      <span></span>
-                    </span>  
-                    <span class="text">Կիսվել</span>
-                  </a>
-                </div>
-    
-                <h2>
-                  <a href="#">
-                    The quick brown fox jumps 
-                  </a>
-                </h2>
-    
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  Loremtext ever since the 1500s, when an
-                </p>
-    
-                <div class="read-more">
-                  <a href="#" aria-label="Read more about this news" class="more">
-                    Կարդալ ավելին
-                    <span class="more-icon"></span>
-                  </a>
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
+
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
+
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
+                      </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
+
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
+
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
+
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
+                          <div class="splide__slide">
+                          <div class="news-image">
+                        <img src="images/news-iteam.jpg" alt="News Iteam">
+                      </div>
+                        <div>
+                          <div class="date">
+                            <span>07 Օգոստոս, 2020</span>
+                            <a href="#" arial-label="share this news" class="share">
+                              <span class="share-icon">
+                                <span></span>
+                              </span>    
+                              <span class="text">Կիսվել</span>
+                            </a>
+                          </div>
+
+                          <h2>
+                            <a href="#">
+                            The quick brown fox jumps
+                            </a>
+                          </h2>
+
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Loremtext ever since the 1500s, when an
+                          </p>
+
+                          <div class="read-more">
+                            <a href="#" aria-label="Read more about this news" class="more">
+                            Կարդալ ավելին
+                            <span class="more-icon"></span>
+                          </a>
+                          </div>
+                        </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="news-card slider-card">
-              <div class="news-image">
-                <img src="images/news-iteam.jpg" alt="News Iteam">
-              </div>
-              <div>
-                <div class="date">
-                  <span>07 Օգոստոս, 2020</span>
-                  <a href="#" aria-label="share this news" class="share">
-                    <span class="share-icon">
-                      <span></span>
-                    </span>  
-                    <span class="text">Կիսվել</span>
-                  </a>
-                </div>
-    
-                <h2>
-                  <a href="#">
-                    The quick brown fox jumps 
-                  </a>
-                </h2>
-    
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  Loremtext ever since the 1500s, when an
-                </p>
-    
-                <div class="read-more">
-                  <a href="#" aria-label="Read more about this news" class="more">
-                    Կարդալ ավելին
-                    <span class="more-icon"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="news-card slider-card">
-              <div class="news-image">
-                <img src="images/news-iteam.jpg" alt="News Iteam">
-              </div>
-              <div>
-              <div class="date">
-                <span>07 Օգոստոս, 2020</span>
-                <a href="#" aria-label="share this news" class="share">
-                  <span class="share-icon">
-                    <span></span>
-                  </span>   
-                  <span class="text">Կիսվել</span>
-                </a>
-              </div>
-    
-              <h2>
-                <a href="#">
-                  The quick brown fox jumps 
-                </a>
-              </h2>
-  
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Loremtext ever since the 1500s, when an
-              </p>
-  
-              <div class="read-more">
-                <a href="#"  aria-label="Read more about this news" class="more">
-                  Կարդալ ավելին
-                  <span class="more-icon"></span>
-                </a>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
 
       </div>
@@ -424,4 +8455,17 @@
     </main>
     <?php require_once 'footer.php'; ?>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="js/categories.js"></script>
+  <script>
+    new Splide( '#news-splide', {
+          type: 'loop',
+          perPage: 3,
+          perMove: 1,
+          pagination: false,
+          autoplay: true,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+        } ).mount();
+  </script>
 <html>

@@ -31,6 +31,19 @@
         width: 32px;
         height: 32px;
       }
+      .product-single-image {
+        background: url('images/single-product2.png') 100% 100% no-repeat;
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+        border: 1px solid black;
+      }
+
+      .product-single-image:hover {
+        background-size: auto;
+        background-position-x: calc(var(--x, 0) * 1px);
+        background-position-y: calc(var(--y, 0) * 1px);
+      }
     </style>
   </head>
   <body id="body">
@@ -64,7 +77,7 @@
                 </div>
                 <div class="product">
                   <div>
-                    <img alt="Product image" src="images/product-single.png">
+                    <div class="product-single-image"></div>
                   </div>
                   <a href="#">
                     <i class="back-icon"></i>  
@@ -210,6 +223,15 @@
     <?php require_once 'footer.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
+      const imageSize = { width: 1920, height: 1080 };
+      const image = document.querySelector('.product-single-image');
+
+      image.addEventListener('mousemove', (event) => {
+        const rect = event.target.getBoundingClientRect();
+        image.style.setProperty('--x', (rect.left - event.clientX) * (imageSize.width - rect.width) / rect.width);
+        image.style.setProperty('--y', (rect.top - event.clientY) * (imageSize.height - rect.height) / rect.height);
+      });
+
       new Splide( '#splide', {
           type: 'loop',
           perPage: 4,

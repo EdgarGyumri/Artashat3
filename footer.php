@@ -5,18 +5,18 @@
         <a class="footer-logo" href="#" aria-label="project logo on footer"></a>
       </div>
       <div>
-        <a class="menu" href="#" aria-label="">Միջոցառումներ</a> 
-        <a class="menu" href="#" aria-label="">Կանոնադրություն</a> 
-        <a class="menu" href="#" aria-label="">Հայաստանի մասին</a> 
-        <a class="menu" href="#" aria-label="">Օգտվելու պայմաններ</a> 
-        <a class="menu" href="#" aria-label="">Հայտարարություններ</a>
+        <a class="menu" href="events.php" aria-label="">Միջոցառումներ</a> 
+        <a class="menu" href="" aria-label="">Կանոնադրություն</a> 
+        <a class="menu" href="about-armenia.php" aria-label="">Հայաստանի մասին</a> 
+        <a class="menu" href="term-of-use.php" aria-label="">Օգտվելու պայմաններ</a> 
+        <a class="menu" href="announcements.php" aria-label="">Հայտարարություններ</a>
       </div>
       <div>
-        <a class="menu" href="#" aria-label="">Մեր թիմը</a> 
-        <a class="menu" href="#" aria-label="">Ձեռքբերումներ</a> 
-        <a class="menu" href="#" aria-label="">Տնօրենի խոսքը</a> 
-        <a class="menu" href="#" aria-label="">Կայքի քարտեզ</a> 
-        <a class="menu" href="#" aria-label="">Աշխատանք</a>
+        <a class="menu" href="about-team.php" aria-label="">Մեր թիմը</a> 
+        <a class="menu" href="achievements.php" aria-label="">Ձեռքբերումներ</a> 
+        <a class="menu" href="staff.php" aria-label="">Տնօրենի խոսքը</a> 
+        <a class="menu" href="site-map.php" aria-label="">Կայքի քարտեզ</a> 
+        <a class="menu" href="jobs.php" aria-label="">Աշխատանք</a>
       </div>
       <div>
         <h2>Հետադարձ կապ</h2>

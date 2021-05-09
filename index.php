@@ -266,7 +266,7 @@
                 </figure>
 
                 <figure>
-                  <a href="#" aria-label="see all products" class="more">
+                  <a href="products.php" aria-label="see all products" class="more">
                     Դիտել բոլորը
                     <i class="more-icon"></i>
                   </a>
@@ -290,6 +290,18 @@
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                           allowfullscreen>
                         </iframe>
+                      </li>
+                      <li class="splide__slide">
+                        <video controls>
+                          <source src="video/arcnet.io_7-sec_.webm" type="video/webm">
+                          <source src="video/arcnet.io(7-sec).mp4" type="video/mp4">
+                        </video>
+                      </li>
+                      <li class="splide__slide">
+                        <video controls>
+                          <source src="video/arcnet.io_7-sec_.webm" type="video/webm">
+                          <source src="video/arcnet.io(7-sec).mp4" type="video/mp4">
+                        </video>
                       </li>
                       <li class="splide__slide">
                         <video controls>
@@ -328,6 +340,12 @@
                           <div class="splide__slide">
                             <img src="images/gallery-photo-1.jpg" alt="">
                           </div>
+                          <div class="splide__slide">
+                            <img src="images/gallery-photo-1.jpg" alt="">
+                          </div>
+                          <div class="splide__slide">
+                            <img src="images/gallery-photo-1.jpg" alt="">
+                          </div>
                       </div>
                   </div>
                 </div>
@@ -343,10 +361,10 @@
               <div class="splide slide-iteams" id="news-splide">
                   <div class="splide__track">
                     <div class="splide__list slide-row">
-                          <div class="splide__slide">
-                          <div class="news-image">
-                        <img src="images/news-iteam.jpg" alt="News Iteam">
-                      </div>
+                      <div class="splide__slide">
+                        <div class="news-image">
+                          <img src="images/news-iteam.jpg" alt="News Iteam">
+                        </div>
                         <div>
                           <div class="date">
                             <span>07 Օգոստոս, 2020</span>
@@ -410,11 +428,10 @@
                           </a>
                           </div>
                         </div>
-                          </div>
-                          <div class="splide__slide">
+                        <div class="splide__slide">
                           <div class="news-image">
                         <img src="images/news-iteam.jpg" alt="News Iteam">
-                      </div>
+                          </div>
                         <div>
                           <div class="date">
                             <span>07 Օգոստոս, 2020</span>
@@ -444,8 +461,8 @@
                           </a>
                           </div>
                         </div>
-                          </div>
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -489,6 +506,16 @@
                       <img src="images/partners/kaufland.svg" alt="Kaufland logo"/>
                     </a>
                     </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/kaufland.svg" alt="Kaufland logo"/>
+                    </a>
+                    </div>
+                    <div class="splide__slide">
+                    <a href="#">
+                      <img src="images/partners/kaufland.svg" alt="Kaufland logo"/>
+                    </a>
+                    </div>
                 </div>
             </div>
           </div>
@@ -511,7 +538,8 @@
       splide.mount();
 
       new Splide( '#video-splide', {
-            type   : 'loop',
+            type   : 'slide',
+            rewind: true,
             perPage: 3,
             perMove: 1,
             pagination: false,
@@ -520,7 +548,8 @@
             pauseOnHover: false,
         } ).mount();
         new Splide( '#photo-splide', {
-            type   : 'loop',
+            type   : 'slide',
+            rewind: true,
             perPage: 3,
             perMove: 1,
             pagination: false,
@@ -529,7 +558,7 @@
             pauseOnHover: false,
         } ).mount();
         new Splide( '#news-splide', {
-          type: 'loop',
+          rewind: true,
           perPage: 3,
           perMove: 1,
           pagination: false,
@@ -538,9 +567,10 @@
           pauseOnHover: false,
         } ).mount();
         new Splide( '#partners-splide', {
-            type   : 'loop',
+            type   : 'slide',
+            rewind: true,
             perPage: 6,
-            perMove: 3,
+            perMove: 1,
             pagination: false,
             autoplay: true,
             pauseOnFocus: false,
